@@ -1,0 +1,157 @@
+@use "../sass/util/functions" as f;
+@use "./global" as glob;
+
+
+%burger-style {
+    position: absolute;
+    width: f.rem(28);
+    height: f.rem(3);
+    background-color: white;
+    @include glob.transition-ease();
+ 
+};
+
+
+
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: f.rem(16);
+    top: f.rem(24);
+    height: f.rem(20);
+    width: f.rem(28);
+    cursor: pointer;
+    @include glob.transition-ease();
+
+
+    &__burger {
+        position: absolute;
+        right: 0;
+        top: f.rem(8);
+        width: f.rem(28);
+        height: f.rem(3);
+        background-color: black;
+        @include glob.transition-ease(); 
+
+        &::before {
+            content : '';
+            position: absolute;
+            right: 0;
+            top: f.rem(-8);
+            width: f.rem(28);
+            height: f.rem(3);
+            background-color: black;
+            @include glob.transition-ease();
+        }
+
+        
+        &::after {
+            content : '';
+            position: absolute;
+            right: 0;
+            top: f.rem(8);
+            width: f.rem(28);
+            height: f.rem(3);
+            background-color: black;
+            @include glob.transition-ease();
+        }
+
+        &.open {
+            transform: rotate(720deg);
+            background-color: transparent;
+
+
+
+            &::before {
+                transform: rotate(45deg) translate(f.rem(5), f.rem(8));
+            }
+
+            &::after {
+                transform: rotate(-45deg) translate(f.rem(3), f.rem(-7));
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+
+
+
+    &.open {
+        visibility: visible;
+    }
+
+    .menu-nav {
+        display: block;
+        text-align: center;
+
+        height: 100vh;
+        overflow: hidden;
+        background-color: gray;
+        padding: f.rem(16);
+        transform: translateY(-100%);
+        @include glob.transition-ease();
+
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        &__item {
+            transform:  translateX(100vw);
+            @include glob.transition-ease();
+
+            &.open {
+                transform: translateX(0);
+            }
+
+        }
+
+        &__link {
+            display: inline-block;
+            font-size: f.rem(32);
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include glob.transition-ease();
+
+
+            &:hover {
+                color: blue;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+}
+
+
+
+@for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}){
+        transition-delay: ($i*0.09s) + 0.15s;
+    }
+}

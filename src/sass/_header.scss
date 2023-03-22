@@ -1,0 +1,417 @@
+@use "../sass/util/functions" as f;
+@use "../sass/util" as u;
+
+@use "./global" as glob;
+
+
+.purple-color {
+    background-color: glob.$primary-color;
+    display: block;
+    width: 100%;
+    height: f.rem(5);
+}
+
+.header {
+    background: white;
+    box-shadow: .5rem .5rem 1rem rgb(176, 173, 173); 
+
+    width: 100%;
+    height: f.rem(50);
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    &__logo-link {
+        cursor: pointer;
+        margin:  0 .7rem;
+        margin-top: .2rem;
+
+
+        &--image {
+            width: f.rem(30);
+        }
+        
+
+    }
+}
+
+
+
+
+  
+.search{
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 2rem;
+
+    @include u.breakpoints-down(tablet){
+        width: 50%;
+    }
+
+    @include u.breakpoints-down(mobile){
+       width: 100%;
+    }
+   
+
+
+    &__box {
+    border-style: solid;
+    border-color: glob.$search-box-color;
+    border-radius: .5rem;
+    padding: .35rem  0;
+    width: 20vw;
+
+    @include u.breakpoints-down(tablet){
+        width: 80%;
+    }
+    @include u.breakpoints-down(mobile){
+       width: 100%;
+    }
+
+    &::placeholder {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+
+    }
+
+    &__image {
+        /*the search box image*/
+        position: absolute;
+        top: f.rem(0);
+        left: 19vw;
+        height: f.rem(32);
+        background-color: glob.$search-box-color;
+        padding: 1rem 1rem 1.06rem 1rem;
+       
+        border-radius: 0 .6rem .6rem 0;
+        @include u.breakpoints-down(tablet){
+            left: 78%;
+           
+        }
+        @include u.breakpoints-down(mobile){
+            left: 95%;
+           
+        }
+    
+        &:hover {
+            cursor: pointer;
+        }
+    
+        
+    }
+  
+}
+
+
+
+
+
+/*header dropdown*/
+.dropdown {
+    min-width: 15rem;
+    position: relative;
+
+    @include u.breakpoints-down(mobile){
+        display: none;
+    }
+
+
+    &__menu {
+        list-style: none;
+        padding: 0.2rem 0.5rem;
+        background: white;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        border-radius: 0.5rem;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+
+
+        & li {
+            padding: 0.4rem 0.5rem;
+            margin: 0.3rem 0;
+            cursor: pointer;
+            border-radius: 0.5rem;
+
+            &:hover {
+                background: glob.$primary-color;
+            }
+
+        }
+
+    }
+
+}
+
+.select {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5rem;
+    padding: .3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/*add with javascript*/
+.select-clicked {
+    border: f.rem(1) glob.$primary-color solid;
+    box-shadow: 0 0 0.4rem glob.$primary-color;
+}
+
+
+.select:hover {
+    background: #f1f6f9;
+
+}
+
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: f.rem(5) solid transparent;
+    border-right: f.rem(5) solid transparent;
+    border-top: f.rem(6) solid black;
+    transition: .3s;
+    margin-left: 1em;
+
+}
+
+
+
+
+
+
+
+.active {
+    background: glob.$primary-color;
+
+}
+
+
+.dropdown__menu--open {
+    display: block;
+    opacity: 1;
+
+}
+
+
+/* add with javascript*/
+.caret-rotate {
+    transform:  rotate(180deg);
+}
+
+
+
+
+.nav-bar {
+    flex: 1;
+    @include u.breakpoints-down(tablet){
+        display: none;
+    }
+    @include u.breakpoints-down(mobile){
+        display: none;
+    }
+  
+    
+   
+
+    & ul li {
+        display: inline-block;
+        list-style: none;
+        margin:0 2%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        padding: .0rem;
+        border-radius: .5rem;
+        font-size: .8rem;
+       
+        
+        &:hover {
+            background-color: #f1f6f9;
+        }
+
+
+        &--login {
+            color: white;
+            background-color: #6a6fe0;
+            padding: .4rem .4rem;
+            //margin-left: 1rem;
+            font-weight: bold;
+            
+    
+
+            &:hover {
+                color:black;
+            }
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/*the side bar burger*/
+.sidebar {
+    height: 100vh;
+    margin-top: .5rem;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: f.rem(-10);
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: f.rem(60);
+    transition: 0.1s;
+   
+
+   
+
+
+    a {
+        padding: f.rem(8) f.rem(8) f.rem(8) 2rem;
+        text-decoration: none;
+        font-size: f.rem(28);
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+}
+
+/*when you mouse ove the navigation links change their color*/
+.sidebar a:hover {
+    color: black;
+}
+
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: f.rem(25);
+    font-size: f.rem(36);
+    margin-left: f.rem(50);
+}
+
+
+
+
+
+/*the button used to  open the sidebar*/
+.openbtn {
+    font-size: f.rem(28);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 0 f.rem(5);
+    border: none;
+
+    @include u.breakpoints-down(tablet){
+        font-size: f.rem(30);
+          
+       }
+    @include u.breakpoints-down(mobile){
+     font-size: f.rem(36);
+       
+    }
+
+
+    &:hover {
+        background-color: rgb(218, 213, 213);
+    }
+}
+
+
+/*transition effect*/
+#btn-main {
+    transition:  margin-right .5s;
+    padding: 0 f.rem(10);
+    @include u.breakpoints-down(mobile){
+      float: right;
+        
+    }
+}
+
+
+
+
+/*burger side bar*/
+#mySidebar nav {
+   
+
+    a {
+        color: black;
+        border-bottom: f.rem(1) solid black;
+        padding: 2rem;
+    }
+
+    
+
+}
+
+#mySidebar nav a:last-child {
+    border: none;
+}
+
+.caret-left {
+    position: relative;
+    background-color: white;
+    padding-bottom: 8rem;
+    margin-top: f.rem(-60);
+    background-color: glob.$primary-color;
+    
+    
+
+
+
+    img {
+        position: absolute;
+        top: f.rem(10);
+        left: f.rem(88);
+        width: f.rem(80);
+
+    }
+}
+
+.caret-left p {
+    position: absolute;
+    font-size: f.rem(20);
+    bottom: f.rem(10);
+    left: 22%;
+    
+}
+
+.caret-left a {
+    width: 100%;
+    text-align: left;
+}
+
+#img-left {
+    position: absolute;
+    top: f.rem(20);
+    left: f.rem(43);
+
+}
+
+
+

@@ -1,0 +1,41 @@
+@use "../util/functions" as f;
+
+
+// In this point we must use the min-width for the large smarphone
+
+$breakpoints-up: (
+    "mobile": f.em(700),
+    'tablet': f.em(900),
+    'desktop': f.em(1440)
+);
+
+
+// In this point we must use the max-width for the minimum smartphone
+
+$breakpoints-down: (
+    "mobile": f.em(699.98),
+    'tablet': f.em(899.98),
+    'desktop': f.em(1439.98)
+);
+
+
+
+
+@mixin breakpoints-up($type-device){
+    @media (min-width: map-get($breakpoints-up, $type-divice)){
+        @content;
+        
+    }
+}
+
+
+@mixin breakpoints-down($type-device){
+    @media (max-width: map-get($breakpoints-down, $type-device)){
+        @content;
+    }
+}
+
+
+
+
+

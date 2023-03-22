@@ -1,0 +1,237 @@
+@use "./util/functions" as f;
+@use "./global"as glob;
+@use "./util" as u;
+
+
+
+
+
+
+body {
+
+    font-family: sans-serif;
+    background-color: glob.$body__background;
+
+}
+
+
+.gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160%;
+    z-index: 9999;
+    width: 66%;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+
+
+.access,
+.open-account{
+    background-color: #ffffff ;
+}
+
+.free-days, .buy,
+.history-course,.student,
+.home, .versionamento,
+.access,#video,
+.open-account{
+    width: 85%;
+    margin: 3.5rem auto;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+
+
+
+
+}
+
+.free-days {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access__title,
+.open-account__title {
+    color: glob.$primary-color;
+    font-weight: normal;
+}
+
+
+
+
+
+#access__form {
+    width: 100%;
+    margin: 0 auto;
+
+    input[type='email'],input[type='password'] {
+        display: block;
+        width:80%;
+        max-width: f.rem(300);
+        min-width: f.rem(200);
+        margin: 1rem auto;
+        padding: 0.4rem;
+        text-indent: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        border-style: solid;
+        border-color: glob.$search-box-color;
+        color:  black;
+
+    }
+
+
+}
+
+label[for='checkbox'] {
+    display: block;
+    width:25%;
+    min-width: f.rem(260);
+    margin: 0 auto;
+
+}
+input[type='checkbox']{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 2.3rem;
+    border-style: outset;
+    border-color: black;
+    margin-bottom: 1rem;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+
+
+.access__btn {
+
+    width: 100%;
+    max-width: f.rem(300);
+    min-width: f.rem(200);
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin: 1.5rem 0;
+    color: #ffffff;
+    background-color: glob.$primary-color;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+#recovery__password {
+
+    width: 80%;
+    max-width: f.rem(300);
+    min-width: f.rem(200);
+    margin: 0 auto;
+    border: none;
+    padding: 1rem;
+    border-bottom:0.1rem solid black;
+    margin-bottom: 1.5rem;
+}
+
+
+.create__account_button{
+
+    border: 0.1rem solid black;
+    width: 70%;
+    max-width: f.rem(250);
+    min-width: f.rem(200);
+    margin: 1rem auto;
+    padding: .5rem 0;
+    border-radius: 0.6rem;
+   
+
+
+    a {
+        color: black;
+       @include u.breakpoints-down(mobile){
+        font-size: f.rem(16);
+       }
+    }
+
+}
+
+
+#facebook__login,
+#google__login {
+    border: 0.1rem solid black;
+    text-align: left;
+    width: 70%;
+    max-width: f.rem(250);
+    min-width: f.rem(200);
+   
+    border-radius: 0.6rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        text-indent: 5pt;
+        color: black;
+        width: 100%;
+        margin: 0 auto;
+
+
+
+    }
+
+
+}
+
+
+#facebook__login {
+    margin-top: 1rem;
+    border-color: #039be5;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+#google__login {
+    border-color: #ff3d00;
+    margin-bottom: 2rem;
+    :hover{
+        cursor: pointer;
+    }
+}
+
+
+span {
+    img {
+        width: f.rem(30);
+        float: right;
+        margin-top: .2rem;
+    }
+}
+
+
+
+.social-link {
+    height: f.rem(40);
+    text-align: left;
+}
+
+
+.social-link p {
+    display: inline-block;
+    margin-top: .6rem;
+}
+
+
+
+
+
+
