@@ -82,6 +82,10 @@ body {
         border-color: glob.$search-box-color;
         color:  black;
 
+        &:hover {
+            border-color: glob.$primary-color;
+        }
+
     }
 
 
@@ -89,15 +93,17 @@ body {
 
 label[for='checkbox'] {
     display: block;
-    width:25%;
-    min-width: f.rem(260);
+    width: 25%;
+    min-width: f.rem(250);
     margin: 0 auto;
+    
 
 }
 input[type='checkbox']{
     display: block;
     margin: 0 auto;
     width: 50%;
+   
     height: 2.3rem;
     border-style: outset;
     border-color: black;
@@ -125,6 +131,10 @@ input[type='checkbox']{
 
     &:hover {
         cursor: pointer;
+        background-color: #fff;
+        color: glob.$primary-color;
+        border:  f.rem(2) solid glob.$primary-color;
+        font-weight: bold;
     }
 }
 
@@ -143,19 +153,30 @@ input[type='checkbox']{
 
 
 .create__account_button{
-
-    border: 0.1rem solid black;
-    width: 70%;
+   
     max-width: f.rem(250);
     min-width: f.rem(200);
     margin: 1rem auto;
-    padding: .5rem 0;
-    border-radius: 0.6rem;
-   
+
+  
 
 
-    a {
+    a { 
+        display: block;
+        width: 100%;
+        min-width: glob.$min-box-value;
+        max-width: glob.$max-box-value;
+        border: f.rem(1.5) solid glob.$primary-color;
+        border-radius: 0.6rem;
+        padding: .5rem 0;
         color: black;
+
+        &:hover {
+            font-weight: 300;
+            background-color: glob.$primary-color;
+            color: #fff;
+        }
+      
        @include u.breakpoints-down(mobile){
         font-size: f.rem(16);
        }

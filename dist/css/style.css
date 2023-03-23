@@ -513,11 +513,14 @@ body {
   border-color: #bfbcbc;
   color: black;
 }
+#access__form input[type=email]:hover, #access__form input[type=password]:hover {
+  border-color: #6a6fe0;
+}
 
 label[for=checkbox] {
   display: block;
   width: 25%;
-  min-width: 16.25em;
+  min-width: 15.625em;
   margin: 0 auto;
 }
 
@@ -548,6 +551,10 @@ input[type=checkbox] :hover {
 }
 .access__btn:hover {
   cursor: pointer;
+  background-color: #fff;
+  color: #6a6fe0;
+  border: 0.125em solid #6a6fe0;
+  font-weight: bold;
 }
 
 #recovery__password {
@@ -562,16 +569,24 @@ input[type=checkbox] :hover {
 }
 
 .create__account_button {
-  border: 0.1rem solid black;
-  width: 70%;
   max-width: 15.625em;
   min-width: 12.5em;
   margin: 1rem auto;
-  padding: 0.5rem 0;
-  border-radius: 0.6rem;
 }
 .create__account_button a {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 0.09375em solid #6a6fe0;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0;
   color: black;
+}
+.create__account_button a:hover {
+  font-weight: 300;
+  background-color: #6a6fe0;
+  color: #fff;
 }
 @media (max-width: 43.74875em) {
   .create__account_button a {
@@ -639,7 +654,7 @@ footer {
   padding: 1.1rem;
   color: #737373;
   background-color: #d9d9d9;
-  text-indent: 10pt;
+  text-indent: 20pt;
 }
 
 footer .logo-image {
@@ -649,4 +664,56 @@ footer .logo-image {
   left: 0.625em;
   top: 0.8125em;
   border-radius: 50%;
+}
+
+.open-account__form form,
+form {
+  width: 80%;
+  max-width: 53.125em;
+  margin: 0 auto;
+}
+.open-account__form form input,
+form input {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 1rem auto;
+  padding: 0.4rem;
+  text-indent: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #bfbcbc;
+}
+.open-account__form form input:hover,
+form input:hover {
+  border-color: #6a6fe0;
+}
+.open-account__form form p,
+form p {
+  width: 100%;
+  margin: 2.2rem auto;
+}
+
+.open-account__btn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: #6a6fe0;
+  color: #6a6fe0;
+  background-color: white;
+  box-shadow: 0.1875em 0.3125em 0.25em rgb(236, 228, 228);
+}
+.open-account__btn:hover {
+  cursor: pointer;
+  background-color: #6a6fe0;
+  color: #fff;
 }

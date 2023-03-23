@@ -1,0 +1,68 @@
+@use "./global" as glob;
+@use "./util" as u;
+@use "./util/functions" as f;
+
+.open-account__form form,
+form{
+    width: 80%;
+    max-width: f.rem(850);
+    margin: 0 auto;
+
+
+    input {
+        display: block;
+        width: 80%;
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
+        margin: 1rem auto;
+        padding: 0.4rem;
+        text-indent: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        border-style: solid;
+        border-color: glob.$search-box-color;
+        
+        &:hover {
+            border-color:glob.$primary-color;
+        }
+        
+
+        
+    }
+    p {
+        width: 100%;
+        margin: 2.2rem auto;
+        
+    }
+
+
+    
+}
+
+
+.open-account__btn {
+    display: block;
+        width:100%;
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
+        margin: 1rem auto;
+
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        border-style: solid;
+        border-width: 0.05rem;
+        border-color: glob.$primary-color;
+        color: glob.$primary-color;
+        background-color: white;
+        box-shadow: f.rem(3) f.rem(5) f.rem(4) rgb(236, 228, 228);
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: glob.$primary-color;
+            color: #fff;
+        }
+
+}
+
