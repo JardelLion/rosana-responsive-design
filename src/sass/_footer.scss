@@ -3,6 +3,7 @@ $footer__background : #d9d9d9;
 $footer__color: #737373;
 @use "./global" as glob;
 @use "./util/functions" as f;
+@use "./util" as u;
 
 
 
@@ -14,16 +15,23 @@ footer {
     color: $footer__color;
     background-color: $footer__background;
     text-indent: 20pt;
+    
+    @include u.breakpoints-down(mobile){
+       text-indent: 30pt;
+    }
    
     
 
 }
 
 footer .logo-image {
-    width: f.rem(30);
-    height: f.rem(30);
+    width: f.rem(40);
+    height: f.rem(40);
     position: absolute;
     left: f.rem(10);
     top: f.rem(13);
-    border-radius: 50%;
+    border: f.rem(2) solid glob.$primary-color;
+    border-radius: f.rem(50);
+
+   
 }

@@ -39,7 +39,7 @@ body {
 .access,#video,
 .open-account{
     width: 85%;
-    margin: 3.5rem auto;
+    margin: 3.5rem auto 0 auto;
     text-align: center;
     padding: 4rem 0 4rem 0;
 
@@ -93,23 +93,20 @@ body {
 
 label[for='checkbox'] {
     display: block;
-    width: 25%;
-    min-width: f.rem(250);
-    margin: 0 auto;
-    
 
 }
-input[type='checkbox']{
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-   
-    height: 2.3rem;
-    border-style: outset;
-    border-color: black;
-    margin-bottom: 1rem;
 
-    :hover {
+#checkbox {
+    width: 100%;
+    max-width: f.rem(32);
+    min-width: f.rem(32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 2.3rem;
+    
+    &:hover {
         cursor: pointer;
     }
 }

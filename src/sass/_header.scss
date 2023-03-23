@@ -28,17 +28,17 @@
 
 
         &--image {
-            width: f.rem(30);
+            width: f.rem(40);
+            
+            border: f.rem(2) solid glob.$primary-color;
+            border-radius: f.rem(50);
         }
+           
         
 
     }
 }
 
-
-
-
-  
 .search{
     position: relative;
     margin-left: 1rem;
@@ -52,25 +52,37 @@
        width: 100%;
     }
    
+   
 
 
     &__box {
     border-style: solid;
     border-color: glob.$search-box-color;
-    border-radius: .5rem;
+    border-radius: .5rem 0 0 .5rem;
     padding: .35rem  0;
     width: 20vw;
+    
 
     @include u.breakpoints-down(tablet){
         width: 80%;
     }
     @include u.breakpoints-down(mobile){
-       width: 100%;
+        padding: .6rem 0;
+        width: 100%;
+       
     }
 
     &::placeholder {
         text-align: center;
         font-size: 1.3rem;
+
+        @include u.breakpoints-down(mobile){
+            font-size: f.rem(20);
+        }
+        
+    }
+    &:hover {
+        border-color: glob.$primary-color;
     }
 
 
@@ -80,10 +92,12 @@
         /*the search box image*/
         position: absolute;
         top: f.rem(0);
-        left: 19vw;
+        left: 20vw;
         height: f.rem(32);
         background-color: glob.$search-box-color;
-        padding: 1rem 1rem 1.06rem 1rem;
+        padding-top:f.rem(5);
+        padding-left:f.rem(5);
+        // padding: 1rem 1rem 1.06rem 1rem;
        
         border-radius: 0 .6rem .6rem 0;
         @include u.breakpoints-down(tablet){
@@ -92,11 +106,16 @@
         }
         @include u.breakpoints-down(mobile){
             left: 95%;
+            padding-top: f.rem(6);
+            padding-left: f.rem(6);
+            height: f.rem(40);
+           
            
         }
     
         &:hover {
             cursor: pointer;
+            background-color: glob.$primary-color;
         }
     
         

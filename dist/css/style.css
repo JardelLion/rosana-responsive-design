@@ -46,7 +46,9 @@ h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
 }
 .header__logo-link--image {
-  width: 1.875em;
+  width: 2.5em;
+  border: 0.125em solid #6a6fe0;
+  border-radius: 3.125em;
 }
 
 .search {
@@ -67,7 +69,7 @@ h2, h3, h4, h5, h6 {
 .search__box {
   border-style: solid;
   border-color: #bfbcbc;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   padding: 0.35rem 0;
   width: 20vw;
 }
@@ -78,6 +80,7 @@ h2, h3, h4, h5, h6 {
 }
 @media (max-width: 43.74875em) {
   .search__box {
+    padding: 0.6rem 0;
     width: 100%;
   }
 }
@@ -85,14 +88,23 @@ h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 1.3rem;
 }
+@media (max-width: 43.74875em) {
+  .search__box::placeholder {
+    font-size: 1.25em;
+  }
+}
+.search__box:hover {
+  border-color: #6a6fe0;
+}
 .search__image {
   /*the search box image*/
   position: absolute;
   top: 0em;
-  left: 19vw;
+  left: 20vw;
   height: 2em;
   background-color: #bfbcbc;
-  padding: 1rem 1rem 1.06rem 1rem;
+  padding-top: 0.3125em;
+  padding-left: 0.3125em;
   border-radius: 0 0.6rem 0.6rem 0;
 }
 @media (max-width: 56.24875em) {
@@ -103,10 +115,14 @@ h2, h3, h4, h5, h6 {
 @media (max-width: 43.74875em) {
   .search__image {
     left: 95%;
+    padding-top: 0.375em;
+    padding-left: 0.375em;
+    height: 2.5em;
   }
 }
 .search__image:hover {
   cursor: pointer;
+  background-color: #6a6fe0;
 }
 
 /*header dropdown*/
@@ -478,7 +494,7 @@ body {
 .access, #video,
 .open-account {
   width: 85%;
-  margin: 3.5rem auto;
+  margin: 3.5rem auto 0 auto;
   text-align: center;
   padding: 4rem 0 4rem 0;
 }
@@ -519,21 +535,19 @@ body {
 
 label[for=checkbox] {
   display: block;
-  width: 25%;
-  min-width: 15.625em;
-  margin: 0 auto;
 }
 
-input[type=checkbox] {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
+#checkbox {
+  width: 100%;
+  max-width: 2em;
+  min-width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
   height: 2.3rem;
-  border-style: outset;
-  border-color: black;
-  margin-bottom: 1rem;
 }
-input[type=checkbox] :hover {
+#checkbox:hover {
   cursor: pointer;
 }
 
@@ -656,14 +670,20 @@ footer {
   background-color: #d9d9d9;
   text-indent: 20pt;
 }
+@media (max-width: 43.74875em) {
+  footer {
+    text-indent: 30pt;
+  }
+}
 
 footer .logo-image {
-  width: 1.875em;
-  height: 1.875em;
+  width: 2.5em;
+  height: 2.5em;
   position: absolute;
   left: 0.625em;
   top: 0.8125em;
-  border-radius: 50%;
+  border: 0.125em solid #6a6fe0;
+  border-radius: 3.125em;
 }
 
 .open-account__form form,
