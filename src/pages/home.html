@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozena - Escola Digital</title>
+    <script src="./../js/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <span id="width"></span>
+    
+    
+    <!--header starts-->
+    <span class="purple-color"></span>
+    <header class="header">
+    
+        <a href="./index.html" class="header__logo-link">
+            <img src="./../img/Logo-Final.Rozena.png" style="width: 40px;height:40px;"
+            class="header__logo-link--image" alt="Rosazan - Escola Digital logo">
+        </a>
+
+
+        <div class="search">
+            <input type="search" class="search__box" placeholder="Procure aqui...">
+            <label for="search-box">
+                <img src="./../img/find.png" alt=""class="search__image">
+            </label>
+        </div>
+
+        
+
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Explore Diplomas e Certificados</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="dropdown__menu" >
+                <li>Framer</li>
+                <li>Sketch</li>
+                <li>Invision Studio</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home">Descubra carreiras</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav-bar__link login-account">Login</a>
+                </li>
+        
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home nav-bar__link--login">Cadastra-se</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <div class="caret-left" id="caret-left-id">
+                <img src="./../img/Ellipse 5user;elipse.png" alt="perfil">
+                <p id="user-name">
+                    Nome do Usuário
+                </p>
+
+                <a href="#"
+                    class="closebtn" onclick="closeNav()">
+                
+                    <img src="./../icon/chevron-left-solid.svg" style="width: 50px;" alt="left icon" id="img-left">
+                </a>
+                
+                <img src="./../img/image 23Sino notificacoes.png" alt="Sino" id="bell">
+                
+                <div id="num-notifi">
+                    <p>10</p>
+                </div>
+            
+            </div>
+            
+            <nav>
+                <a href="#">Minha conta</a>
+                <a href="#">Meu perfil</a>
+                <a href="./actualizar_dados.html">Histórico de Cursos</a>
+                <a href="#">Suporte</a>
+                <a href="./index.html">Sair</a>
+            </nav>
+            
+        </div>
+
+        
+
+        <div id="btn-main">
+            <button class="openbtn" onclick="openNav()">
+                &#9776;</button>
+        </div>
+
+
+    </header>
+    <!--ends header-->
+
+
+
+
+
+    <main class="home home--bg-purple">
+        <div class="gray" style="height: 240%;"></div>
+
+
+
+
+        <div class="start-course-cl" style="display: none;">
+            <div class="closemodal"></div>
+            <div id="start-course">
+                <img src="./img/chevron-circle-down-solid 1fecharmodal.png" alt="" id="icon-confirmed">
+                <h1>
+                    Engenharia de software,programação e controle
+                    de verssionamento
+                </h1>
+        
+        
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, mollitia laudantium voluptatem consectetur nam eum rerum earum, assumenda vitae omnis doloribus recusandae, ab voluptatibus molestias harum suscipit reprehenderit magnam numquam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa nostrum voluptatibus cupiditate impedit odit officia voluptatem quia pariatur! Vero mollitia tempore consectetur, rerum animi hic aperiam placeat fugit repudiandae?
+                </p>
+        
+                <div class="container-list">
+                    <ul>
+                        <li>
+                            <img src="./img/tags-solid 1.png" alt="tags-solid">
+                            <p>Tecnologia de informação, Marketing</p>
+                        </li>
+            
+                        <li>
+                            <img src="./img/copyright-solid 1.png" alt="copyright-solid">
+                            <p>Publicado por: DEBLIW.AO</p>
+                        </li>
+        
+        
+        
+                        <li>
+                            <img src="./img/clock-solid 1.png" alt="clock-solid">
+                            <p>Duração: <span class="hours-course">2.5</span> Horas</p>
+                        </li>
+            
+            
+                        
+                    </ul>
+                </div>
+        
+        
+        
+                <a href="#">INICIAR CURSO</a>
+        
+        
+               
+                <div class="versionamento-context ">
+                    <button id="btn-modulo">MODULOS</button>
+                    <button id="btn-resultado">RESULTADO</button>
+                    <button id="btn-certificacao">CERTIFICAÇÃO</button>
+                    <ol style="display: none;">
+                        <li class="ol-title">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                        </li>
+        
+                        <ul>
+                            <li>
+                                <p> consectetur, from a Lorem Ipsum passagË</p>
+        
+                            </li>
+        
+                            <li>
+                                <p>and going through the cite»</p>
+                            </li>
+        
+                            <li>
+                                <p>of the word in classical literaturË</p>
+                            </li>
+        
+        
+                            <li>
+                                <p>discovered the undoubtable source.</p>
+                            </li>
+                        </ul>
+        
+                        <li class="ol-title">
+                            <p> It has roots in a piece of classical Latin literaturË</p>
+                        </li>
+        
+        
+                        <ul>
+                            <li>
+                                <p>from 45 BC, making it over 2000 years oldÓ</p>
+                            </li>
+        
+                            <li>
+                                <p>Richard McClintock, a Latin professoá</p>
+                            </li>
+        
+        
+                            <li>
+                                <p>at Hampden-Sydney College in Virginia</p>
+                            </li>
+                        </ul>
+        
+        
+                        <li class="ol-title">
+                            <p>looked up one of the more obscure Latin word»</p>
+                        </li>
+        
+        
+                        <ul>
+                            <li>
+                                <p>consectetur, from a Lorem Ipsum passagË</p>
+                            </li>
+        
+        
+        
+                            <li>
+                                <p>and going through the cite»</p>
+                            </li>
+        
+                            <li>
+                                <p>of the word in classical literaturË</p>
+                            </li>
+        
+        
+                            <li>
+                                <p>discovered the undoubtable source.</p>
+                            </li>
+                        </ul>
+                        
+                    </ol>
+        
+        
+                    <div class="resultado-context" style="display: none;">
+                        <p>
+                            O que vem primeiro, pós, mestrado ou doutorado?
+                            Depois da graduação você pode escolher entre uma
+                            pós-graduação lato sensu ou um mestrado
+                            que, como dissemos, é também uma pós-graduação,
+                            mas do tipo stricto sensu.
+                        </p>
+        
+        
+                        <h4>NO FIM DESSE CURSO ESTARÁ APTO A FAZER TAL COISA.</h4>
+                    </div>
+        
+        
+                   
+                       
+                    <div class="certificacao-context" style="display: none;">
+        
+                        
+                        <p>O que vem primeiro, pós, mestrado ou doutorado?</p>
+        
+                        <p>Depois da graduação você pode escolher entre uma
+                            pós-graduação lato sensu ou um mestradoque, 
+                            como dissemos, é também uma pós-graduação,
+                            mas do tipo stricto sensu.
+                        </p>
+        
+        
+                        <h4>O CERTIFICADO SERÁ ASSIM ASSIM ASSIM ASSIM ASSIM</h4>
+                    </div>
+        
+        
+        
+                </div>
+        
+        
+        
+              
+                
+        
+            </div>
+
+        </div>
+
+            
+
+        <h1 class="home__title">Os melhores cursos com certificados e diplomas</h1>
+        
+        <div class="search-day">
+                <input type="search" placeholder="O que procuras hoje? ">
+            <label for="search-box">
+                <img src="./img/magnifying-glass-solid-search.png" alt="">
+            </label>
+        </div>
+
+
+
+
+
+        <div class="container-img">
+
+            <img src="./img/chamarizbanner;inicial.png" alt="">
+            
+            <h2>Não sabe por onde começar?</h2>
+            <p>
+                    Qual é o seu objectivo ?
+            </p>
+            
+        </div>
+
+
+
+        <div class="card card--first">
+            <div class="card__text">
+                <a href="#">Melhorar as minhas habilidades
+
+                    <span class="card__text--icon">
+                        &#10095;
+                    </span>
+                </a>
+                
+            </div>
+
+
+            <div class="card__text">
+                <a href="#">Quero mudar de carreira
+
+                    <span class="card__text--icon">
+                        &#10095;
+                    </span>
+                </a>
+                
+            </div>
+
+            <div class="card__text">
+                <a href="#">Apenas aprender coisas novas
+
+                    <span class="card__text--icon">
+                        &#10095;
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./img/profile3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile5.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile6.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile7.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile8.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile9.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+
+
+       
+  
+
+        
+
+
+
+        <!--
+            card sell ends
+        -->
+
+        <div class="more-course">
+            <a href="#" alt="">
+                EXPLORAR MAIS CURSOS
+            </a>
+        </div>
+
+
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile5.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile6.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile7.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile8.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="./../img/profile9.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+
+
+
+        <div class="more-course">
+            <a href="#" alt="">
+                EXPLORAR MAIS E-BOOKS
+            </a>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <a href="./index.html">
+        <img src="./../img/Logo-Final.Rozena.png"
+         alt="" class="logo-image" style="width:40px;height:40px">
+    </a>
+    
+    Rozena 2023 | Politícas de privacidade | Termos de uso | Coockies
+</footer>
+
+
+
+
+
+</body>
+<script src="./../js/slide.js"></script>
+<script src="./../js/dropdown.js"></script>
+<script src="./../js/burger.js"></script>
+<link rel="stylesheet" href="./../../dist/css/slide.css">
+<link rel="stylesheet" href="./../../dist/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="./../../dist/css/style.css">
+
+</html>
