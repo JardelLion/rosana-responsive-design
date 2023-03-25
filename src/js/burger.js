@@ -4,6 +4,8 @@ function openNav(){
     let largura = window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth
+
+   
     
    
 

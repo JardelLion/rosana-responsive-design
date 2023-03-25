@@ -250,8 +250,8 @@ h2, h3, h4, h5, h6 {
   height: 100vh;
   margin-top: 0.5rem;
   width: 0;
-  position: fixed;
   z-index: 1;
+  position: fixed;
   top: -0.625em;
   right: 0;
   background-color: white;
@@ -316,6 +316,10 @@ h2, h3, h4, h5, h6 {
 }
 
 /*burger side bar*/
+#mySidebar {
+  z-index: 2;
+}
+
 #mySidebar nav a {
   color: black;
   border-bottom: 0.0625em solid black;
@@ -328,34 +332,52 @@ h2, h3, h4, h5, h6 {
 
 .caret-left {
   position: relative;
+  display: flex;
   background-color: white;
   padding-bottom: 8rem;
   margin-top: -3.75em;
   background-color: #6a6fe0;
 }
-.caret-left img {
+
+.perfil-photo {
   position: absolute;
   top: 0.625em;
   left: 5.5em;
   width: 5em;
 }
 
-.caret-left p {
+.bell {
+  position: absolute;
+  top: 0.625em;
+  left: 20.625em;
+  width: 5em;
+}
+
+.caret-left > p {
   position: absolute;
   font-size: 1.25em;
   bottom: 0.625em;
-  left: 22%;
+  left: 38%;
 }
 
-.caret-left a {
+.num-notifi {
+  position: absolute;
+  font-size: 40px;
   width: 100%;
-  text-align: left;
+  right: -400px;
+  top: 30px;
+}
+
+.caret-left > button:hover {
+  cursor: pointer;
 }
 
 #img-left {
   position: absolute;
-  top: 1.25em;
-  left: 2.6875em;
+  top: 0.875em;
+  left: -7.5em;
+  width: 1.875em;
+  height: 1.875em;
 }
 
 .menu-btn {
@@ -535,6 +557,8 @@ body {
 
 label[for=checkbox] {
   display: block;
+  width: 7.875em;
+  margin: 0 auto;
 }
 
 #checkbox {
@@ -736,4 +760,91 @@ form p {
   cursor: pointer;
   background-color: #6a6fe0;
   color: #fff;
+}
+
+.price {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: 0.25em solid #6a6fe0;
+  padding: 8px;
+  color: #6a6fe0;
+  font-weight: bold;
+  border-radius: 25px 25px 0 25px;
+  background-color: black;
+  z-index: 1;
+}
+@media (max-width: 43.74875em) {
+  .price {
+    font-size: 2em;
+  }
+}
+.price::before, .price::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 20px;
+  border: none;
+  background-color: hsl(0, 0%, 0%);
+}
+@media (max-width: 56.24875em) {
+  .price::before, .price::after {
+    display: none;
+  }
+}
+.price::after {
+  border-radius: 0 25px 0 0;
+  background-color: #6a6fe0;
+}
+@media (max-width: 56.24875em) {
+  .price {
+    border-radius: 0;
+    right: 0.625em;
+    top: 0.625em;
+    font-size: 1.125em;
+  }
+}
+
+.card-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 43.74875em) {
+  .card-button .button {
+    display: none;
+  }
+}
+@media (max-width: 43.74875em) {
+  .card-button .start {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #6a6fe0;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  .card-button .start:hover {
+    background-color: hsl(237, 89%, 63%);
+  }
+}
+
+.start {
+  border: 1px solid #6a6fe0;
+  background-color: white;
+  color: #6a6fe0;
+}
+.start:hover {
+  color: #fff;
+}
+
+@media (max-width: 56.24875em) {
+  .swiper-navBtn {
+    color: black;
+  }
+  .swiper-navBtn:hover {
+    color: hsl(237, 89%, 63%);
+  }
 }

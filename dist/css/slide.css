@@ -12,7 +12,8 @@
 }
 .card{
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: #f3f8fb;
+  border: 1px solid #6a6fe0;
 }
 .image-content,
 .card-content{
@@ -32,7 +33,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070F4;
+  background-color: #6a6fe0;
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -43,26 +44,29 @@
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #4070F4;
+  border: none;
+  background-color: #6a6fe0;
 }
 .overlay::after{
   border-radius: 0 25px 0 0;
-  background-color: #FFF;
+  background-color: #f3f8fb;
 }
 .card-image{
   position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 50%;
+  
   padding: 3px;
 }
 .card-image .card-img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4;
+  border-radius: 20%; 
+  border: 4px solid #6166cd;
 }
 .name{
   font-size: 18px;
@@ -79,14 +83,14 @@
   font-size: 16px;
   color: #FFF;
   padding: 8px 16px;
-  background-color: #4070F4;
+  background-color: #6a6fe0;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button:hover{
-  background: #265DF2;
+  background: hsl(237, 89%, 63%);
 }
 
 .swiper-navBtn{

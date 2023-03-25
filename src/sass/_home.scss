@@ -1,0 +1,111 @@
+@use "./util" as u;
+@use "./util/functions" as f;
+@use "./global" as glob;
+
+.price {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border: f.rem(4) solid #6a6fe0;
+    padding: 8px;
+    color: #6a6fe0;
+    font-weight: bold;
+    border-radius: 25px 25px 0 25px;
+    background-color: black;
+    z-index: 1;
+    @include u.breakpoints-down(mobile){
+        font-size: f.rem(32);
+    }
+    
+    &::before,
+    &::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 0%);
+
+    @include u.breakpoints-down(tablet) {
+        display: none;
+    }
+    }
+
+    &::after{
+    border-radius: 0 25px 0 0;
+    background-color: #6a6fe0;
+    }
+   
+    @include u.breakpoints-down(tablet){
+        border-radius: 0;
+        right: f.rem(10);
+        top: f.rem(10);
+        font-size: f.rem(18);
+      
+     
+        
+    }
+
+  
+
+
+}
+
+.card-button {
+    width:100%;
+  
+    display: flex;
+    justify-content: space-between;
+
+    & .button {
+       @include u.breakpoints-down(mobile){
+        display: none;
+       }
+    }
+
+    & .start {
+        @include u.breakpoints-down(mobile){
+            display: block;
+            width: 40%;
+            margin: 0 auto;
+            background-color: #6a6fe0;
+            color: #fff;
+            margin-top: 1rem;
+            
+            &:hover {
+                background-color: hsl(237, 89%, 63%);
+            }
+
+        }
+    }
+
+
+
+}
+
+
+.start {
+    border:1px solid #6a6fe0;
+    background-color: white;
+    color: #6a6fe0;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+
+
+.swiper-navBtn {
+    @include u.breakpoints-down(tablet){
+        color: black;
+
+        &:hover {
+            color: glob.$hover-box-color;
+        }
+
+    }
+   
+}

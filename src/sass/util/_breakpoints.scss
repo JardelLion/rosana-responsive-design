@@ -22,7 +22,7 @@ $breakpoints-down: (
 
 
 @mixin breakpoints-up($type-device){
-    @media (min-width: map-get($breakpoints-up, $type-divice)){
+    @media (min-width: map-get($breakpoints-up, $type-device)){
         @content;
         
     }

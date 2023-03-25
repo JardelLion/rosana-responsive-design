@@ -295,8 +295,8 @@
     height: 100vh;
     margin-top: .5rem;
     width: 0;
-    position: fixed;
     z-index: 1;
+    position: fixed;
     top: f.rem(-10);
     right: 0;
     background-color: white;
@@ -330,6 +330,7 @@
     right: f.rem(25);
     font-size: f.rem(36);
     margin-left: f.rem(50);
+    
 }
 
 
@@ -375,6 +376,9 @@
 
 
 /*burger side bar*/
+#mySidebar {
+    z-index: 2;
+}
 #mySidebar nav {
    
 
@@ -394,6 +398,7 @@
 
 .caret-left {
     position: relative;
+    display: flex;
     background-color: white;
     padding-bottom: 8rem;
     margin-top: f.rem(-60);
@@ -403,34 +408,55 @@
 
 
 
-    img {
-        position: absolute;
-        top: f.rem(10);
-        left: f.rem(88);
-        width: f.rem(80);
-
-    }
+   
 }
 
-.caret-left p {
+.perfil-photo {
+    position: absolute;
+    top: f.rem(10);
+    left: f.rem(88);
+    width: f.rem(80);
+    
+  
+}
+
+.bell {
+    position: absolute;
+    top: f.rem(10);
+    left: f.rem(330);
+    width: f.rem(80);
+
+}
+.caret-left > p {
     position: absolute;
     font-size: f.rem(20);
     bottom: f.rem(10);
-    left: 22%;
+    left: 38%;
     
 }
 
-.caret-left a {
+.num-notifi {
+    position: absolute;
+    font-size: 40px;
     width: 100%;
-    text-align: left;
+    right: -400px;
+    top: 30px;
 }
 
+.caret-left > button:hover {
+    cursor: pointer;
+   
+}
 #img-left {
     position: absolute;
-    top: f.rem(20);
-    left: f.rem(43);
+    top: f.rem(14);
+    left: f.rem(-120);
+    width: f.rem(30);
+    height: f.rem(30);
 
 }
+
+
 
 
 
