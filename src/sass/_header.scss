@@ -312,26 +312,13 @@
         padding: f.rem(8) f.rem(8) f.rem(8) 2rem;
         text-decoration: none;
         font-size: f.rem(28);
-        color: #818181;
         display: block;
         transition: 0.3s;
+
     }
 }
 
-/*when you mouse ove the navigation links change their color*/
-.sidebar a:hover {
-    color: black;
-}
 
-
-.sidebar .closebtn{
-    position: absolute;
-    top: 0;
-    right: f.rem(25);
-    font-size: f.rem(36);
-    margin-left: f.rem(50);
-    
-}
 
 
 
@@ -386,6 +373,11 @@
         color: black;
         border-bottom: f.rem(1) solid black;
         padding: 2rem;
+
+        &:hover {
+            color: glob.$primary-color;
+            font-size: f.rem(32);
+        }
     }
 
     
@@ -397,12 +389,17 @@
 }
 
 .caret-left {
-    position: relative;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
     background-color: white;
-    padding-bottom: 8rem;
+    height: 8rem;
     margin-top: f.rem(-60);
-    background-color: glob.$primary-color;
+    background-color: glob.$search-box-color;
+   
+   
     
     
 
@@ -411,48 +408,47 @@
    
 }
 
-.perfil-photo {
-    position: absolute;
-    top: f.rem(10);
-    left: f.rem(88);
-    width: f.rem(80);
-    
-  
-}
 
 .bell {
-    position: absolute;
-    top: f.rem(10);
-    left: f.rem(330);
-    width: f.rem(80);
+   width: f.rem(40);
+   height: f.rem(40);
 
 }
 .caret-left > p {
-    position: absolute;
-    font-size: f.rem(20);
-    bottom: f.rem(10);
-    left: 38%;
+    margin-top: 4.5rem;
     
 }
 
 .num-notifi {
-    position: absolute;
-    font-size: 40px;
-    width: 100%;
-    right: -400px;
-    top: 30px;
+    font-size: f.rem(20);
+    border: f.rem(2) solid glob.$primary-color;
+    border-radius: f.rem(50);
+    padding: f.rem(2);
+    margin-left: f.rem(-25);
+    padding-right:f.rem(4);
+
+    @include u.breakpoints-down(mobile){
+        margin-left: f.rem(1);
+        margin-right: f.rem(5);
+        
+    }
+    
+    
+    
+    
 }
 
 .caret-left > button:hover {
     cursor: pointer;
    
+
 }
-#img-left {
-    position: absolute;
-    top: f.rem(14);
-    left: f.rem(-120);
+.closebtn {
+    background-color: glob.$search-box-color;
     width: f.rem(30);
     height: f.rem(30);
+    margin-top: f.rem(-30);
+   
 
 }
 

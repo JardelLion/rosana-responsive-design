@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rozena - Escola Digital</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
 
 </head>
 <body>
@@ -64,18 +65,21 @@
 
         <div id="mySidebar" class="sidebar">
             <div class="caret-left" id="caret-left-id">
+
+                <button class="closebtn" onclick="closeNav()">
+                    <img src="./src/icon/chevron-left-solid.svg" style="width: 40px;" alt="left icon" id="img-left">
+                </button>
+
                 <img src="./src/img/Ellipse 5user;elipse.png" alt="perfil">
                 <p id="user-name">
                     Nome do Usuário
                 </p>
 
-                <button class="closebtn" onclick="closeNav()">
-                    <img src="./src/icon/chevron-left-solid.svg" style="width: 30px;" alt="left icon" id="img-left">
-                </button>
+              
                 
-                <img src="./src/img/image 23Sino notificacoes.png" alt="Sino" id="bell">
+                <img src="./src/img/image 23Sino notificacoes.png" alt="Sino" class="bell">
                 
-                <div id="num-notifi">
+                <div class="num-notifi">
                     <p>10</p>
                 </div>
             
@@ -172,6 +176,6 @@
 </body>
 <script src="./src/js/dropdown.js"></script>
 <script src="./src/js/burger.js"></script>
-<link rel="stylesheet" href="./dist/css/style.css">
+
 
 </html>

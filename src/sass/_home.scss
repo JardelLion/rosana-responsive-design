@@ -109,3 +109,148 @@
     }
    
 }
+
+
+
+
+.home--bg-purple {
+    background-color: glob.$body__background;
+
+}
+.home__title {
+    color: glob.$search-box-color;
+    margin: 1rem 0;
+}
+
+
+
+/*login starts*/
+.login-account {
+    padding: .3em 1em;
+    color: #6a6fe0;
+    border: 1px solid #6a6fe0;
+    border-radius: .5em;
+    margin: 0 .2em;
+    font-weight: bold;
+}
+/*search day*/
+.search-day {
+    width: 70%;
+    min-width: 260px;
+    margin: 0 auto;
+    position: relative;
+
+    
+    & input {
+        width: 55%;
+        padding: .8em;
+        margin-bottom: 1em;
+        border-radius: .5rem;
+        border: 1.5px solid glob.$search-box-color;
+        background-color: white;
+
+        &::placeholder {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+    
+    
+
+    & label img {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 27%;
+        top: 20%;
+
+    }
+
+    
+}
+
+
+
+
+/*imagem center*/
+.container-img img {
+    width: 100%;
+    
+    
+}
+.container-img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-img h2, .container-img p{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    left: auto;
+    font-weight: 100;
+    
+}
+
+.container-img p { 
+    top: 50%;
+    color: glob.$search-box-color;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/*card*/
+
+.card-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+        
+    }
+}
+.card__text {
+    background-color: #6a6fe0;
+    border-radius: .5rem;
+    margin: 2rem;
+    box-shadow:  -.3em -.2em 1em glob.$search-box-color;
+   
+    &:hover {
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    @include u.breakpoints-down(tablet){
+        min-width: f.rem(275);
+
+
+
+    }
+
+    
+    
+
+    a {
+        display: block;
+        width: 100%;
+        padding: f.rem(6);
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        &:hover {
+            color: glob.$primary-color;
+        }
+    }
+}
+
+
+
+
+
+/*card text ends*/

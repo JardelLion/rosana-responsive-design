@@ -263,22 +263,8 @@ h2, h3, h4, h5, h6 {
   padding: 0.5em 0.5em 0.5em 2rem;
   text-decoration: none;
   font-size: 1.75em;
-  color: #818181;
   display: block;
   transition: 0.3s;
-}
-
-/*when you mouse ove the navigation links change their color*/
-.sidebar a:hover {
-  color: black;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 1.5625em;
-  font-size: 2.25em;
-  margin-left: 3.125em;
 }
 
 /*the button used to  open the sidebar*/
@@ -325,59 +311,59 @@ h2, h3, h4, h5, h6 {
   border-bottom: 0.0625em solid black;
   padding: 2rem;
 }
+#mySidebar nav a:hover {
+  color: #6a6fe0;
+  font-size: 2em;
+}
 
 #mySidebar nav a:last-child {
   border: none;
 }
 
 .caret-left {
-  position: relative;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
   background-color: white;
-  padding-bottom: 8rem;
+  height: 8rem;
   margin-top: -3.75em;
-  background-color: #6a6fe0;
-}
-
-.perfil-photo {
-  position: absolute;
-  top: 0.625em;
-  left: 5.5em;
-  width: 5em;
+  background-color: #bfbcbc;
 }
 
 .bell {
-  position: absolute;
-  top: 0.625em;
-  left: 20.625em;
-  width: 5em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .caret-left > p {
-  position: absolute;
-  font-size: 1.25em;
-  bottom: 0.625em;
-  left: 38%;
+  margin-top: 4.5rem;
 }
 
 .num-notifi {
-  position: absolute;
-  font-size: 40px;
-  width: 100%;
-  right: -400px;
-  top: 30px;
+  font-size: 1.25em;
+  border: 0.125em solid #6a6fe0;
+  border-radius: 3.125em;
+  padding: 0.125em;
+  margin-left: -1.5625em;
+  padding-right: 0.25em;
+}
+@media (max-width: 43.74875em) {
+  .num-notifi {
+    margin-left: 0.0625em;
+    margin-right: 0.3125em;
+  }
 }
 
 .caret-left > button:hover {
   cursor: pointer;
 }
 
-#img-left {
-  position: absolute;
-  top: 0.875em;
-  left: -7.5em;
+.closebtn {
+  background-color: #bfbcbc;
   width: 1.875em;
   height: 1.875em;
+  margin-top: -1.875em;
 }
 
 .menu-btn {
@@ -848,3 +834,116 @@ form p {
     color: hsl(237, 89%, 63%);
   }
 }
+
+.home--bg-purple {
+  background-color: #f3f8fb;
+}
+
+.home__title {
+  color: #bfbcbc;
+  margin: 1rem 0;
+}
+
+/*login starts*/
+.login-account {
+  padding: 0.3em 1em;
+  color: #6a6fe0;
+  border: 1px solid #6a6fe0;
+  border-radius: 0.5em;
+  margin: 0 0.2em;
+  font-weight: bold;
+}
+
+/*search day*/
+.search-day {
+  width: 70%;
+  min-width: 260px;
+  margin: 0 auto;
+  position: relative;
+}
+.search-day input {
+  width: 55%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.5rem;
+  border: 1.5px solid #bfbcbc;
+  background-color: white;
+}
+.search-day input::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.search-day label img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 27%;
+  top: 20%;
+}
+
+/*imagem center*/
+.container-img img {
+  width: 100%;
+}
+
+.container-img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-img h2, .container-img p {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  left: auto;
+  font-weight: 100;
+}
+
+.container-img p {
+  top: 50%;
+  color: #bfbcbc;
+  font-size: 1.2em;
+}
+
+/*card*/
+.card-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 56.24875em) {
+  .card-link {
+    flex-direction: column;
+  }
+}
+
+.card__text {
+  background-color: #6a6fe0;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  box-shadow: -0.3em -0.2em 1em #bfbcbc;
+}
+.card__text:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 56.24875em) {
+  .card__text {
+    min-width: 17.1875em;
+  }
+}
+.card__text a {
+  display: block;
+  width: 100%;
+  padding: 0.375em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.card__text a:hover {
+  color: #6a6fe0;
+}
+
+/*card text ends*/
