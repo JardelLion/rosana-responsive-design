@@ -1,0 +1,203 @@
+@use "./global" as glob;
+@use "./util" as u;
+@use "./util/functions" as f;
+
+/*versionamento starts*/
+.versionamento{
+    background-color: glob.$body__background;
+    text-align: center;
+    width: 70%;
+    padding: 0 25px;
+    @include u.breakpoints-down(desktop){
+        width: 90%;
+        margin-top: f.rem(42);
+    }
+    @include u.breakpoints-down(tablet){
+        width: 80%;
+        
+    }
+    @include u.breakpoints-down(mobile) {
+        width: 100%;
+        text-align: center;
+        min-width: f.rem(200);
+        padding: 0 20px;
+        
+       
+    };
+    max-width: f.rem(900);
+    margin: 0 auto;
+    & > h1 {
+        color: black;
+        margin: 0 auto;
+        font-size: 16px;
+        margin-bottom: 2em;
+        display: none;
+    }
+
+
+}
+
+.versionamento > p {
+    width: 80%;
+    text-align: left;
+    @include u.breakpoints-down(tablet){
+        width: 90%;
+        text-align: left;
+        margin-top: f.rem(16);
+        font-size: f.rem(28);
+    }
+    margin-bottom: 1rem;
+
+}
+
+
+.versionamento > a {
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid glob.$primary-color;
+    background-color: glob.$primary-color;
+    border-radius: .5rem;
+    width: 30%;
+    padding: .6rem;
+
+    margin: f.rem(32) 0;
+    color: white;
+    
+}
+/*versionamento ends*/
+
+
+/*container-list start*/
+.container-list {
+    text-align: left;
+}
+.container-list li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.container-list p {
+    display: inline;
+    margin-left: .5rem;
+}
+
+
+
+/*container-list end*/
+
+
+/*container content start*/
+
+
+#btn-modulo,
+#btn-resultado,
+#btn-certificacao {
+    border: none;
+    background-color: glob.$search-box-color;
+    font-size: f.rem(20);
+    margin-top: 1rem;
+    @include u.breakpoints-down(tablet){
+        width:100%;
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
+        margin: f.rem(6) auto;
+        border: 2px solid glob.$primary-color;
+        font-size: f.rem(16);
+        border-radius: .4rem;
+      
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+.versionamento-context{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: f.rem(17);
+    background-color: glob.$search-box-color;
+    margin-bottom: f.rem(5);
+    margin-top: f.rem(18);
+   
+
+    @include u.breakpoints-down(tablet){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height:  f.rem(600);
+       
+        
+    }
+    @include u.breakpoints-down(mobile){
+        overflow: scroll;
+
+    }
+
+    
+    
+    padding: 3em;
+    height: f.rem(500);
+    border-radius: .5em;
+}
+.versionamento ol {
+    font-weight: bold;
+
+}
+
+.ol-title,
+.buy__book--subtitle{
+    font-weight: normal;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.versionamento-context ol ul li {
+    list-style: disc;
+    margin-left: 2em;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+/*versionamento context end*/
+
+
+
+
+
+/*resultado context start*/
+/*certificacao context start*/
+
+.certificacao-context p,
+.resultado-context p {
+    margin-top: 2.5em;
+    text-align: left;
+}
+
+.certificacao-context h4,
+.resultado-context h4 {
+    text-align: left;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+
+
+/*resultado context end*/
+/*certificacao context end*/
+
+
+
+
+
+

@@ -67,7 +67,7 @@
         width: 80%;
     }
     @include u.breakpoints-down(mobile){
-        padding: .6rem 0;
+        padding: 9.5px 0;
         width: 100%;
        
     }
@@ -95,8 +95,8 @@
         left: 20vw;
         height: f.rem(32);
         background-color: glob.$search-box-color;
-        padding-top:f.rem(5);
-        padding-left:f.rem(5);
+        padding-top: 5px;
+        padding-left: 5px;
         // padding: 1rem 1rem 1.06rem 1rem;
        
         border-radius: 0 .6rem .6rem 0;
@@ -106,9 +106,9 @@
         }
         @include u.breakpoints-down(mobile){
             left: 95%;
-            padding-top: f.rem(6);
-            padding-left: f.rem(6);
-            height: f.rem(40);
+            padding-top:6px;
+            padding-left: 6px;
+            height: 40px;
            
            
         }
@@ -456,3 +456,9 @@
 
 
 
+@media (min-width: 900px) and 
+(max-width: 935px){
+    .profission {
+        display: none;
+    }
+}
