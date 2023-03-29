@@ -682,13 +682,17 @@ footer {
   text-align: center;
   padding: 1.1rem;
   color: #737373;
-  background-color: #d9d9d9;
   text-indent: 20pt;
 }
 @media (max-width: 43.74875em) {
   footer {
     text-indent: 30pt;
   }
+}
+
+.gray-color {
+  background-color: #bfbcbc;
+  opacity: 0.4;
 }
 
 footer .logo-image {
@@ -995,11 +999,20 @@ form p {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 205vh;
   align-items: center;
   left: 0;
   top: 0%;
   z-index: 99999;
+}
+@media (max-width: 89.99875em) {
+  .start-course-cl {
+    height: 1805px;
+  }
+}
+@media (max-width: 56.24875em) {
+  .start-course-cl {
+    height: 1980px;
+  }
 }
 
 .closemodal {
@@ -1039,21 +1052,6 @@ form p {
   margin: 2em auto;
   color: white;
 }
-#start-course #btn-modulo,
-#start-course #btn-resultado,
-#start-course #btn-certificacao {
-  border: none;
-  background-color: #bfbcbc;
-  font-size: 30px;
-  margin-top: 1em;
-  font-size: 22px;
-  margin-left: 2em;
-}
-#start-course #btn-modulo:hover,
-#start-course #btn-resultado:hover,
-#start-course #btn-certificacao:hover {
-  cursor: pointer;
-}
 
 #icon-confirmed {
   position: absolute;
@@ -1068,6 +1066,7 @@ form p {
 /*versionamento starts*/
 .versionamento {
   background-color: #f3f8fb;
+  opacity: 1;
   text-align: center;
   width: 70%;
   padding: 0 25px;
@@ -1235,3 +1234,50 @@ form p {
 
 /*resultado context end*/
 /*certificacao context end*/
+.scroll {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: -80px;
+  border-radius: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #6a6fe0 0%, #6a6fe0 81.3%);
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 5px 0px #888;
+  transition: 300ms;
+  margin-bottom: 25px;
+}
+.scroll img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+.scroll i {
+  margin-top: 10px;
+  text-shadow: 0 0 2px #fff;
+}
+
+.scroll:hover i {
+  animation-name: rotate;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {
+    margin-top: 15px;
+  }
+  to {
+    margin-top: 5px;
+  }
+}
+.visible {
+  right: 30px;
+  transition: all 400ms;
+  transform: rotate(360deg);
+}

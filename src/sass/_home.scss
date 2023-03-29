@@ -312,7 +312,13 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 205vh;
+    @include u.breakpoints-down(desktop){
+        height:  1805px;
+    }
+    @include u.breakpoints-down(tablet){
+        height: 1980px;
+    }
+   
     align-items: center;
     left: 0;;
     top: 0%;
@@ -355,24 +361,6 @@
         margin: 2em auto;
         color: white;
     }
-
-
-    #btn-modulo,
-    #btn-resultado,
-    #btn-certificacao {
-    border: none;
-    background-color: glob.$search-box-color;
-    font-size: 30px;
-    margin-top: 1em;
-    font-size: 22px;
-
-    &:hover {
-        cursor: pointer;
-    }
-    margin-left: 2em;
-}
-
-    
 }
 
 

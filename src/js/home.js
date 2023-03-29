@@ -16,9 +16,17 @@ let startCouseCl = document.querySelector('.start-course-cl');
 for(var index = 0; index < cardSellBoxInfoLink.length; index++){
     cardSellBoxInfoLink[index].addEventListener("click", () => {
         startCouseCl.style.display = 'block';
-        //startCouseCl.style.height = `${altura}px`;
-
-        //console.log(`${altura}px`)
+        scrollToTop();
+       
     
     })
 }
+
+
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
