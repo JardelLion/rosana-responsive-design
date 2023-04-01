@@ -54,7 +54,7 @@ h2, h3, h4, h5, h6 {
 .search {
   position: relative;
   margin-left: 1rem;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 @media (max-width: 56.24875em) {
   .search {
@@ -70,12 +70,12 @@ h2, h3, h4, h5, h6 {
   border-style: solid;
   border-color: #bfbcbc;
   border-radius: 0.5rem 0 0 0.5rem;
-  padding: 0.35rem 0;
+  padding: 5.5px 0;
   width: 20vw;
 }
 @media (max-width: 56.24875em) {
   .search__box {
-    width: 80%;
+    width: 100%;
   }
 }
 @media (max-width: 43.74875em) {
@@ -101,7 +101,7 @@ h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0em;
   left: 20vw;
-  height: 2em;
+  height: 32px;
   background-color: #bfbcbc;
   padding-top: 5px;
   padding-left: 5px;
@@ -109,7 +109,7 @@ h2, h3, h4, h5, h6 {
 }
 @media (max-width: 56.24875em) {
   .search__image {
-    left: 78%;
+    left: 100%;
   }
 }
 @media (max-width: 43.74875em) {
@@ -208,6 +208,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .nav-bar {
+  display: flex;
+  flex-direction: row;
   flex: 1;
 }
 @media (max-width: 56.24875em) {
@@ -223,7 +225,12 @@ h2, h3, h4, h5, h6 {
 .nav-bar ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 2%;
+  margin: 0 5px;
+}
+@media (max-width: 56.24875em) {
+  .nav-bar ul li:nth-child(1) {
+    display: none;
+  }
 }
 .nav-bar__link {
   text-decoration: none;
@@ -369,6 +376,14 @@ h2, h3, h4, h5, h6 {
 @media (min-width: 900px) and (max-width: 935px) {
   .profission {
     display: none;
+  }
+}
+@media (max-width: 985px) {
+  .nav-bar ul li:nth-child(1) {
+    display: none;
+  }
+  .nav-bar ul li:last-child {
+    margin-left: 60px;
   }
 }
 .menu-btn {
@@ -528,6 +543,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+#access__form > p {
+  margin: 0;
+}
 #access__form input[type=email], #access__form input[type=password] {
   display: block;
   width: 80%;
@@ -587,14 +605,22 @@ label[for=checkbox] {
 }
 
 #recovery__password {
-  width: 80%;
-  max-width: 18.75em;
+  display: block;
+  max-width: 50em;
   min-width: 12.5em;
   margin: 0 auto;
-  border: none;
-  padding: 1rem;
-  border-bottom: 0.1rem solid black;
-  margin-bottom: 1.5rem;
+  background-color: #fff;
+}
+#recovery__password p {
+  font-size: 1.25em;
+}
+@media (max-width: 43.74875em) {
+  #recovery__password p {
+    font-size: 1.125em;
+  }
+}
+#recovery__password p:last-child {
+  margin: 0;
 }
 
 .create__account_button {
@@ -651,6 +677,22 @@ label[for=checkbox] {
 #facebook__login :hover {
   cursor: pointer;
 }
+#facebook__login .social-link {
+  position: relative;
+}
+#facebook__login .social-link p {
+  margin: 0;
+  padding: 11px;
+  width: 220px;
+}
+#facebook__login .social-link a {
+  padding: 0;
+}
+#facebook__login .social-link img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 #google__login {
   border-color: #ff3d00;
@@ -658,6 +700,22 @@ label[for=checkbox] {
 }
 #google__login :hover {
   cursor: pointer;
+}
+#google__login .social-link {
+  position: relative;
+}
+#google__login .social-link p {
+  margin: 0;
+  padding: 11px;
+  width: 220px;
+}
+#google__login .social-link a {
+  padding: 0;
+}
+#google__login .social-link img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 span img {
@@ -682,6 +740,7 @@ footer {
   text-align: center;
   padding: 1.1rem;
   color: #737373;
+  background-color: #d9d9d9;
   text-indent: 20pt;
 }
 @media (max-width: 43.74875em) {
@@ -834,6 +893,12 @@ form p {
 .start:hover {
   color: #fff;
 }
+.start a {
+  padding: 10px 0;
+}
+.start a:hover {
+  color: #fff;
+}
 
 @media (max-width: 56.24875em) {
   .swiper-navBtn {
@@ -870,6 +935,16 @@ form p {
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 43.74875em) {
+  .search-day {
+    width: 100%;
+  }
+}
+@media (min-width: 43.75em) {
+  .search-day {
+    display: none;
+  }
+}
 .search-day input {
   width: 55%;
   padding: 0.8em;
@@ -877,6 +952,11 @@ form p {
   border-radius: 0.5rem;
   border: 1.5px solid #bfbcbc;
   background-color: white;
+}
+@media (max-width: 43.74875em) {
+  .search-day input {
+    width: 100%;
+  }
 }
 .search-day input::placeholder {
   text-align: center;
@@ -886,8 +966,14 @@ form p {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 27%;
+  left: 15%;
+  margin-right: 20px;
   top: 20%;
+}
+@media (max-width: 43.74875em) {
+  .search-day label img {
+    display: none;
+  }
 }
 
 /*imagem center*/
@@ -907,6 +993,10 @@ form p {
   width: 100%;
   left: auto;
   font-weight: 100;
+}
+
+.container-img h2 {
+  font-size: clamp(1.5625em, 2vw + 1em, 1.75em);
 }
 
 .container-img p {
@@ -1249,6 +1339,11 @@ form p {
   box-shadow: 0 0 5px 0px #888;
   transition: 300ms;
   margin-bottom: 25px;
+}
+@media (max-width: 43.74875em) {
+  .scroll {
+    display: none;
+  }
 }
 .scroll img {
   width: 25px;

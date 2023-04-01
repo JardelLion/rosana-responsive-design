@@ -94,6 +94,19 @@
     &:hover {
         color: #fff;
     }
+
+    & a {
+        padding: 10px 0;
+        
+
+        &:hover {
+            color: #fff;
+           
+        }
+       
+     
+       
+    }
 }
 
 
@@ -139,6 +152,13 @@
     min-width: 260px;
     margin: 0 auto;
     position: relative;
+    @include u.breakpoints-down(mobile){
+        width: 100%;
+    }
+
+    @include u.breakpoints-up(mobile){
+        display: none;
+    }
 
     
     & input {
@@ -148,6 +168,10 @@
         border-radius: .5rem;
         border: 1.5px solid glob.$search-box-color;
         background-color: white;
+
+        @include u.breakpoints-down(mobile){
+            width: 100%;
+        }
 
         &::placeholder {
             text-align: center;
@@ -161,8 +185,12 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        left: 27%;
+        left: 15%;
+        margin-right: 20px;
         top: 20%;
+        @include u.breakpoints-down(mobile){
+            display: none;
+        }
 
     }
 
@@ -175,6 +203,7 @@
 /*imagem center*/
 .container-img img {
     width: 100%;
+
     
     
 }
@@ -191,6 +220,11 @@
     left: auto;
     font-weight: 100;
     
+}
+
+.container-img h2 {
+    font-size: clamp(f.rem(25), 2vw + f.rem(16), f.rem(28))
+
 }
 
 .container-img p { 

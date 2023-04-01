@@ -42,10 +42,13 @@
 .search{
     position: relative;
     margin-left: 1rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
+
+   
 
     @include u.breakpoints-down(tablet){
         width: 50%;
+
     }
 
     @include u.breakpoints-down(mobile){
@@ -59,12 +62,13 @@
     border-style: solid;
     border-color: glob.$search-box-color;
     border-radius: .5rem 0 0 .5rem;
-    padding: .35rem  0;
+    padding: 5.5px  0;
     width: 20vw;
+    
     
 
     @include u.breakpoints-down(tablet){
-        width: 80%;
+        width: 100%;
     }
     @include u.breakpoints-down(mobile){
         padding: 9.5px 0;
@@ -93,7 +97,7 @@
         position: absolute;
         top: f.rem(0);
         left: 20vw;
-        height: f.rem(32);
+        height: 32px;
         background-color: glob.$search-box-color;
         padding-top: 5px;
         padding-left: 5px;
@@ -101,7 +105,7 @@
        
         border-radius: 0 .6rem .6rem 0;
         @include u.breakpoints-down(tablet){
-            left: 78%;
+            left: 100%;
            
         }
         @include u.breakpoints-down(mobile){
@@ -234,6 +238,8 @@
 
 
 .nav-bar {
+    display: flex;
+    flex-direction: row;
     flex: 1;
     @include u.breakpoints-down(tablet){
         display: none;
@@ -248,7 +254,15 @@
     & ul li {
         display: inline-block;
         list-style: none;
-        margin:0 2%;
+        margin: 0 5px;
+        &:nth-child(1){
+            @include u.breakpoints-down(tablet){
+                display: none;
+            }
+        }
+        
+       
+        
     }
 
     &__link {
@@ -462,3 +476,15 @@
         display: none;
     }
 }
+
+@media (max-width: 985px){
+   .nav-bar ul li:nth-child(1){
+    display: none;
+   }
+
+   .nav-bar ul li:last-child {
+    margin-left: 60px;
+   }
+}
+
+

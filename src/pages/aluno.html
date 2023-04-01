@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozena - Escola Digital</title>
+    <script src="./../js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/aluno.css">
+    
+
+</head>
+<body>
+    <span id="width"></span>
+    
+    
+    <!--header starts-->
+    <span class="purple-color"></span>
+    <header class="header">
+    
+        <a href="./../../index.html" class="header__logo-link">
+            <img src="./../img/Logo-Final.Rozena.png" style="width: 40px;height:40px;"
+            class="header__logo-link--image" alt="Rosazan - Escola Digital logo">
+        </a>
+
+
+        <div class="search">
+            <input type="text" class="search__box" placeholder="Procure aqui...">
+            <label for="search-box">
+                <img src="./../img/find.png" alt=""class="search__image">
+            </label>
+        </div>
+
+        
+
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Explore Diplomas e Certificados</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="dropdown__menu" >
+                <li>Framer</li>
+                <li>Sketch</li>
+                <li>Invision Studio</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home">Descubra carreiras</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav-bar__link login-account">Login</a>
+                </li>
+        
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home nav-bar__link--login">Cadastra-se</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <div class="caret-left" id="caret-left-id">
+
+                <button class="closebtn" onclick="closeNav()">
+                
+                    <img src="./../icon/chevron-left-solid.svg" style="width: 40px;" alt="left icon" id="img-left">
+                </button>
+
+                <img  class="perfil-photo" src="./../img/Ellipse 5user;elipse.png" alt="perfil">
+                <p id="user-name">
+                    Nome do Usuário
+                </p>
+
+                
+                
+                <img src="./../img/image 23Sino notificacoes.png" alt="Sino" class="bell">
+                
+                <div class="num-notifi">
+                    <p>10</p>
+                </div>
+            
+            </div>
+            
+            <nav>
+                <a href="#">Minha conta</a>
+                <a href="#">Meu perfil</a>
+                <a href="./actualizar_dados.html">Histórico de Cursos</a>
+                <a href="#">Suporte</a>
+                <a href="./index.html">Sair</a>
+            </nav>
+            
+        </div>
+
+        
+
+        <div id="btn-main">
+            <button class="openbtn" onclick="openNav()">
+                &#9776;</button>
+        </div>
+
+
+    </header>
+    <!--ends header-->
+
+
+    <main class="student" >
+        <div class="gray"></div>
+        <div class="student__box">
+            <img src="./../img/Ellipse 5user;elipse.png" alt="">
+            <p class="user-name">Nome do Estudante</p>  
+        </div>
+
+
+
+        <form action="#" id="student-date">
+       
+            <section class="first-table">
+             
+                <label for="text">Nome (Fica no certificado)</label>
+                <input type="text" id="student-name" value="" placeholder="Nome do Estudante"
+                required>
+                    
+                <label for="phone">Telefone</label>
+                <input type="text"  id="student-phone" value="" placeholder="909 876 000"
+                required>
+                    
+                <label for="email">Email</label>
+                <input type="email" id="student-email" value="" placeholder="Email"
+                required>
+
+                <button class="btn-update-date">Atualizar dados</button>
+                <button class="btn-update-date btn-update-picture" id="student-picture">Atualizar foto</button>
+
+
+
+                <label for="password">Nova palavra passe</label>
+                <input type="password" id="student-password"
+                required>
+    
+            </section>
+    
+            
+            <section class="second-table">
+            
+                <label for="text">Genero</label>
+                <select name="select" required>
+                    <option value="" class="student-sex" >Femenino</option>
+                    <option value="" class="student-sex" >Masculino</option>
+                    
+                    
+                </select>
+                
+                <label for="phone">Nascimento</label>
+                <input type="date" id="student-birth" value="" placeholder="1999-02-02"
+                required>
+                
+
+                <label for="text">Província</label>
+                <select name="select" required>
+                    <option value="">Cunene</option>
+                    <option value="" selected>Huila</option>
+                    <option value="">Huambo</option>
+                    <option value="">Luanda</option>
+                    <option value="">Bie</option>
+                    <option value="">Kwanza sul</option>
+                    <option value="">Kwanza Norte</option>
+                    <option value="">Benguela</option>
+                    <option value="">Namibe</option>
+                    <option value="">Zaire</option>
+                    
+                </select>
+
+
+                <label for="text">Municípicio</label>
+                <select name="select" required>
+                    <option value="">Cunene</option>
+                    <option value="" selected>Huila</option>
+                    <option value="">Huambo</option>
+                    <option value="">Luanda</option>
+                    <option value="">Bie</option>
+                    <option value="">Kwanza sul</option>
+                    <option value="">Kwanza Norte</option>
+                    <option value="">Benguela</option>
+                    <option value="">Namibe</option>
+                    <option value="">Zaire</option>
+                    
+                </select>
+
+
+                
+                <input type="file" class="file-upload" value='' required >
+
+                <label for="password">Confirmar palavra passe</label>
+                <input type="password" id="student-confirm-password" value=""
+                required>
+           
+            </section>
+    
+    
+            <button id="student-save">Nova palavra passe</button>
+            
+        </form>
+
+
+        
+
+
+    
+    
+    </main>
+
+    <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+        <img src="./../icon/angle-up.svg" alt="">
+     </div>
+
+    
+
+
+
+
+    <footer>
+        <a href="./../../index.html">
+            <img src="./../img/Logo-Final.Rozena.png"
+             alt="" class="logo-image" style="width:40px;height:40px">
+        </a>
+        
+        Rozena 2023 | Politícas de privacidade | Termos de uso | Coockies
+    </footer>
+    
+</body>
+<script src="./../js/dropdown.js"></script>
+<script src="./../js/burger.js"></script>
+
+
+
+<script src="./../js/scrollUp.js"></script>
+
+
+</html>

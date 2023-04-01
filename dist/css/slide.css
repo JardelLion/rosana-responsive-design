@@ -4,16 +4,18 @@
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
+
 }
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
   border-radius: 25px;
+
 }
 .card{
   border-radius: 25px;
   background-color: #f3f8fb;
-  border: 1px solid #6a6fe0;
+ 
 }
 .image-content,
 .card-content{

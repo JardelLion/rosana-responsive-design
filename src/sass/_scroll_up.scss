@@ -1,6 +1,11 @@
 @use "./global" as glob;
+@use "./util" as u;
 
 .scroll {
+  @include u.breakpoints-down(mobile){
+    display: none;
+  }
+
   cursor: pointer;
   width: 30px;
   height: 30px;

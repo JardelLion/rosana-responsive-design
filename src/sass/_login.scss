@@ -67,6 +67,9 @@ body {
 #access__form {
     width: 100%;
     margin: 0 auto;
+    & > p {
+       margin: 0;
+    }
 
     input[type='email'],input[type='password'] {
         display: block;
@@ -144,14 +147,20 @@ label[for='checkbox'] {
 
 #recovery__password {
 
-    width: 80%;
-    max-width: f.rem(300);
+    display: block;
+    max-width: f.rem(800);
     min-width: f.rem(200);
     margin: 0 auto;
-    border: none;
-    padding: 1rem;
-    border-bottom:0.1rem solid black;
-    margin-bottom: 1.5rem;
+    background-color: #fff;
+    & p {
+        font-size: f.rem(20);
+        @include u.breakpoints-down(mobile){
+            font-size: f.rem(18);
+        }
+    }
+    & p:last-child {
+       margin: 0;
+    }
 }
 
 
@@ -222,6 +231,24 @@ label[for='checkbox'] {
     :hover {
         cursor: pointer;
     }
+    & .social-link {
+        position: relative;
+    }
+
+    & .social-link  p {
+        margin: 0;
+        padding: 11px;
+        width: 220px;
+    }
+    & .social-link a {
+        padding: 0;
+    }
+
+    & .social-link img {
+        position: absolute;
+        top:0;
+        right: 0;
+    }
 }
 
 #google__login {
@@ -229,6 +256,24 @@ label[for='checkbox'] {
     margin-bottom: 2rem;
     :hover{
         cursor: pointer;
+    }
+    & .social-link {
+        position: relative;
+    }
+
+    & .social-link  p {
+        margin: 0;
+        padding: 11px;
+        width: 220px;
+    }
+    & .social-link a {
+        padding: 0;
+    }
+
+    & .social-link img {
+        position: absolute;
+        top:0;
+        right: 0;
     }
 }
 
