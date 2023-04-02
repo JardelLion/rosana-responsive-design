@@ -25,12 +25,27 @@
 @media (min-width: 56.25em) {
   #student-date {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 select[name=select] {
   display: block;
   margin: 2em auto;
+}
+
+@media (min-width: 56.25em) {
+  .first-table {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .second-table {
+    width: 45%;
+    margin: 0 auto;
+  }
 }
 
 #student-date .first-table input,
@@ -48,6 +63,12 @@ select[name=select] {
   border: 1px solid #a7abec;
 }
 
+@media (max-width: 56.24875em) {
+  .first-table {
+    height: 380px;
+  }
+}
+
 .first-table label,
 .second-table label {
   max-width: 300px;
@@ -59,12 +80,49 @@ select[name=select] {
   color: #737576;
 }
 
+@media (max-width: 56.24875em) {
+  #student-date .first-table {
+    position: relative;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  #student-date .first-table label[for=password] {
+    position: relative;
+    top: 576px;
+  }
+}
+@media (min-width: 56.25em) {
+  #student-date .first-table label[for=password] {
+    margin-top: 33px;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .first-table #student-password {
+    position: relative;
+    top: 580px;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .second-table label[for=password] {
+    margin-top: 7.5em;
+  }
+}
+
 .first-table input::placeholder {
   color: black;
 }
 @media (min-width: 56.25em) {
   .first-table input::placeholder {
     font-size: 1.25em;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .first-table label[for=phone] {
+    margin-top: 40px;
   }
 }
 
@@ -86,6 +144,35 @@ select[name=select] {
 .btn-update-date:hover,
 #student-date > button:hover {
   cursor: pointer;
+}
+
+@media (min-width: 56.25em) {
+  .btn-update-date {
+    margin-top: 66px;
+  }
+}
+
+@media (min-width: 56.25em) {
+  #student-date > button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .btn-update-picture {
+    display: none;
+  }
+}
+@media (min-width: 56.25em) {
+  .btn-update-picture {
+    margin-top: 72px;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .btn-update-date {
+    margin-top: 45px;
+  }
 }
 
 #student-date > button {

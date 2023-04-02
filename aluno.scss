@@ -31,6 +31,8 @@
     flex-direction: column;
     @include u.breakpoints-up(tablet){
         flex-direction: row;
+        flex-wrap: wrap;
+
     }
    
 }
@@ -41,9 +43,20 @@
 
 }
 
+.first-table {
+    @include u.breakpoints-up(tablet){
+        width: 45%;
+        margin: 0 auto;
+    }
+}
 
+.second-table {
+    @include u.breakpoints-up(tablet){
+        width: 45%;
+        margin: 0 auto;
+    }
+}
 
- 
  #student-date .first-table input,
  #student-date .second-table input {
      padding: .8rem;
@@ -61,6 +74,15 @@
     
 }
 
+.first-table {
+    @include u.breakpoints-down(tablet){
+        height: 380px;
+    }
+}
+
+
+
+
 
 
  .first-table label,
@@ -75,6 +97,43 @@
     // margin-bottom: 5px;
  }
 
+ 
+#student-date .first-table {
+  @include u.breakpoints-down(tablet){
+    position: relative;
+  }
+}
+
+#student-date .first-table label[for='password'] {
+   @include u.breakpoints-down(tablet){
+    position: relative;
+    top: 576px;
+
+   
+   }
+   @include u.breakpoints-up(tablet){
+    margin-top: 33px;
+   }
+    
+}
+
+.first-table #student-password {
+   @include u.breakpoints-down(tablet){
+    position: relative;
+    top: 580px;
+   }
+}
+
+
+
+
+.second-table label[for="password"]{
+    @include u.breakpoints-down(tablet){
+        margin-top: f.rem(120);
+
+    }
+   
+}
 
 .first-table input::placeholder {
     @include u.breakpoints-up(tablet){
@@ -84,6 +143,14 @@
    
  }
 
+ .first-table label[for='phone']{
+    @include u.breakpoints-up(tablet){
+        margin-top: 40px;
+    }
+ }
+
+
+ 
 
 
 .btn-update-date,
@@ -109,6 +176,37 @@
 
  }
 
+.btn-update-date {
+    @include u.breakpoints-up(tablet){
+        margin-top: 66px;
+    }
+}
+
+  #student-date > button {
+     @include u.breakpoints-up(tablet){
+        
+         max-width: 100%;
+       
+     }
+    
+}
+
+
+ .btn-update-picture{
+    @include u.breakpoints-down(tablet){
+        display: none;
+        
+    }
+    @include u.breakpoints-up(tablet){
+        margin-top: 72px;
+    }
+ }
+ 
+.btn-update-date  {
+    @include u.breakpoints-down(tablet){
+        margin-top: 45px;
+    }
+}
 
 
 
