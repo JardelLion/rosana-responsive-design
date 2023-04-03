@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozena - Escola Digital</title>
+    <script src="./../js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/slide.css">
+    <link rel="stylesheet" href="./../../dist/css/swiper-bundle.min.css">
+    
+
+</head>
+<body>
+    <span id="width"></span>
+    
+    
+    <!--header starts-->
+    <span class="purple-color"></span>
+    <header class="header">
+    
+        <a href="./../../index.html" class="header__logo-link">
+            <img src="./../img/Logo-Final.Rozena.png" style="width: 40px;height:40px;"
+            class="header__logo-link--image" alt="Rosazan - Escola Digital logo">
+        </a>
+
+
+        <div class="search">
+            <input type="text" class="search__box" placeholder="Procure aqui...">
+            <label for="search-box">
+                <img src="./../img/find.png" alt=""class="search__image">
+            </label>
+        </div>
+
+        
+
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Explore Diplomas e Certificados</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="dropdown__menu" >
+                <li>Framer</li>
+                <li>Sketch</li>
+                <li>Invision Studio</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home">Descubra carreiras</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav-bar__link login-account">Login</a>
+                </li>
+        
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home nav-bar__link--login">Cadastra-se</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <div class="caret-left" id="caret-left-id">
+
+                <button class="closebtn" onclick="closeNav()">
+                
+                    <img src="./../icon/chevron-left-solid.svg" style="width: 40px;" alt="left icon" id="img-left">
+                </button>
+
+                <img  class="perfil-photo" src="./../img/Ellipse 5user;elipse.png" alt="perfil">
+                <p id="user-name">
+                    Nome do Usuário
+                </p>
+
+                
+                
+                <img src="./../img/image 23Sino notificacoes.png" alt="Sino" class="bell">
+                
+                <div class="num-notifi">
+                    <p>10</p>
+                </div>
+            
+            </div>
+            
+            <nav>
+                <a href="#">Minha conta</a>
+                <a href="./aluno.html">Meu perfil</a>
+                <a href="./actualizar_dados.html">Histórico de Cursos</a>
+                <a href="#">Suporte</a>
+                <a href="./index.html">Sair</a>
+            </nav>
+            
+        </div>
+
+        
+
+        <div id="btn-main">
+            <button class="openbtn" onclick="openNav()">
+                &#9776;</button>
+        </div>
+
+
+    </header>
+    <!--ends header-->
+
+
+
+    <main class="history-course">
+        <div class="gray"></div>
+
+        <div class="date">
+            <img src="./../img/Ellipse 5user;elipse.png" alt=""> 
+            
+
+            <section class="date__client">
+                <p>Nome do Aluno</p>
+                <p>
+                    Na plantafrma há 1 mês
+                </p>
+
+                <p>
+                    Cursos Concluidos: 0/0
+                </p>
+            </section>
+
+            <div class="date__list">
+                <ul>
+                    <li id="first">
+                        <p>Gênero: <span id="date__sex">Masculino</span></p>
+                    </li>
+                    <li id="second">
+                        <p>Telefone: <span id="date__phone-number">999 999 999</span></p>
+                    </li>
+                    <li>
+                        <p>Província: <span class="date__state">Cabinda</span></p>
+                    </li>
+                </ul>
+    
+    
+                <ul>
+                    <li>
+                        <p>Nascimento:
+                            <span id="date__birth">
+                                1996-08-15
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Email:
+                            <span id="date__email">hvsdjugf@gmail.com</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Município: <span class="date__state">Cabinda</span></p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <a href="./aluno.html">Atualizar dados</a>
+        
+        </div>
+
+
+
+        <div class="date__certification">
+            <h2>Certificados</h2>
+            <ul>
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+
+
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+            </ul>
+           
+        </div>
+        
+
+
+        
+        <div class="date__certification">
+            <span></span>
+            <h2>Cursos Completos</h2>
+            <ul>
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+
+
+                <li>
+                    <img src="./../img/image 32.png" alt="">
+                    <a href="#">Guia completo sobre Renda Variável</a>
+                </li>
+            </ul>
+           
+        </div>
+
+        
+
+
+    
+    
+    </main>
+
+
+
+
+    <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+        <img src="./../icon/angle-up.svg" alt="">
+     </div>
+ 
+ 
+ 
+ 
+ <footer>
+     <a href="./../../index.html">
+         <img src="./../img/Logo-Final.Rozena.png"
+          alt="" class="logo-image" style="width:40px;height:40px">
+     </a>
+     
+     Rozena 2023 | Politícas de privacidade | Termos de uso | Coockies
+ </footer>
+ 
+ 
+ 
+ 
+ 
+ </body>
+ <script src="./../js/dropdown.js"></script>
+ <script src="./../js/burger.js"></script>
+ <script src="./../js/scrollUp.js"></script>
+ 
+ 
+ </html>

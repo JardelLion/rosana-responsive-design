@@ -165,9 +165,7 @@ label[for='checkbox'] {
 
 
 .create__account_button{
-   
-    max-width: f.rem(250);
-    min-width: f.rem(200);
+    width: 100%;
     margin: 1rem auto;
 
   
@@ -175,12 +173,13 @@ label[for='checkbox'] {
 
     a { 
         display: block;
-        width: 100%;
+        width: 45%;
         min-width: glob.$min-box-value;
         max-width: glob.$max-box-value;
+        margin: 0 auto;
         border: f.rem(1.5) solid glob.$primary-color;
         border-radius: 0.6rem;
-        padding: .5rem 0;
+        padding: .9rem 0;
         color: black;
 
         &:hover {

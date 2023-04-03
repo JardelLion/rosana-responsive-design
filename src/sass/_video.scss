@@ -1,0 +1,244 @@
+
+.video {
+    padding: 0;
+    width: 90%;
+    max-width: 900px;
+    margin: 5em auto;
+    text-align: center;
+    background-color: #f3f8fb;
+  
+    
+    
+}
+
+
+.video__content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    &--image {
+        position: absolute;
+        top: 32%;
+        left: 42%;
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    
+}
+
+video {
+    width: 100%;
+    height: 440px;
+    margin-bottom: 1.5rem;
+}
+
+
+.video section {
+    margin-bottom: 55em;
+
+    & ul li {
+        list-style: none;
+        border-bottom: 1px solid black;
+        text-align: left;
+        text-indent: 1em;
+        width: 80%;
+        margin-left: 2em;
+        padding: 1em 0;
+    }
+
+
+}
+
+
+.video section ul li:first-child {
+    font-size: 25px;
+    border-color: black;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+
+}
+
+
+
+.material-help li:nth-child(2),
+.material-help li:last-child{
+    border-bottom-color: red;
+}
+
+
+
+.material-help li:last-child {
+    margin-bottom: 6rem;
+}
+
+.material-help{
+    float: left;
+    padding: 2em 0em 0em 0em;
+    
+    
+
+}
+
+.material-help,
+.video aside {
+    width: 46%;
+    background-color: white;
+
+}
+
+
+
+.video aside {
+    float: right;
+    padding: 2em 0em 8em 0em;
+}
+
+.material-help ul li {
+    position: relative;
+
+}
+.material-help ul li a {
+    margin-left: 3rem;
+}
+
+.material-help ul li a img {
+    position: absolute;
+    left: 0;
+    margin-top: -1rem;
+    
+}
+
+.video aside ul li a {
+    position: absolute;
+    margin-top: .8rem;
+    margin-left: -.8rem;
+}
+
+
+
+
+
+
+.video section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+
+#course-text {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: #6a6fe0;
+    font-size: 25px;
+    padding: .7em 0;
+    color: white;
+ 
+
+    
+
+}
+
+
+.bg-color {
+    display: block;
+    padding:2rem 1rem;
+    background-color: #f3f8fb;
+}
+
+
+
+
+@media (max-width:699.98px) {
+     .video__content {
+        width: 100%;
+        
+        }
+
+     .material-help {
+         position: absolute;
+         width: 90%;
+         margin-top: 650px;
+         display: block;
+         float: none;
+
+   
+       
+     }
+
+     #course-text {
+         margin-bottom: 0rem;
+     }
+
+
+     .video  aside {
+        width: 100%;
+         display: block;
+         padding-bottom: 5rem;
+        float: none;
+
+        
+     }
+
+
+    .footer--video {
+         margin-top: -160px;
+     }
+
+    
+ }
+
+
+
+
+
+
+
+// @media screen 
+// and (min-width:$media_port_view)
+// and (max-width:$media_port_view_medium) {
+//     .video__content {
+//         width: 100%;
+        
+       
+//     }
+
+//     #course-text {
+//         margin-bottom: 0rem;
+//     }
+
+
+//     .video  aside {
+//         width: 50%;
+       
+//         padding-bottom: 5rem;
+        
+
+        
+//     }
+
+//     .video section ul li a {
+//         font-size: 1rem;
+//     }
+
+
+    
+
+    
+
+
+
+
+
+// }

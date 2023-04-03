@@ -368,9 +368,10 @@ h2, h3, h4, h5, h6 {
 
 .closebtn {
   background-color: #bfbcbc;
-  width: 1.875em;
+  width: 30px;
   height: 1.875em;
   margin-top: -1.875em;
+  margin-left: 20px;
 }
 
 @media (min-width: 900px) and (max-width: 935px) {
@@ -624,18 +625,18 @@ label[for=checkbox] {
 }
 
 .create__account_button {
-  max-width: 15.625em;
-  min-width: 12.5em;
+  width: 100%;
   margin: 1rem auto;
 }
 .create__account_button a {
   display: block;
-  width: 100%;
+  width: 45%;
   min-width: 200px;
   max-width: 300px;
+  margin: 0 auto;
   border: 0.09375em solid #6a6fe0;
   border-radius: 0.6rem;
-  padding: 0.5rem 0;
+  padding: 0.9rem 0;
   color: black;
 }
 .create__account_button a:hover {
@@ -1375,4 +1376,345 @@ form p {
   right: 30px;
   transition: all 400ms;
   transform: rotate(360deg);
+}
+
+.history-course {
+  max-width: 900px;
+}
+
+.date > img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.date {
+  position: relative;
+  background-color: #f3f8fb;
+  text-align: center;
+  padding-bottom: 4em;
+}
+@media (max-width: 56.24875em) {
+  .date {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .date__client {
+    position: absolute;
+    top: 1em;
+    left: 14em;
+  }
+}
+.date__client p {
+  font-size: 25px;
+  display: block;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+.date__client p:nth-child(2)::before {
+  display: inline-block;
+  position: relative;
+  top: 11px;
+  content: "";
+  background: url("./../../src/img/image 24.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.date__client p:last-child::before {
+  display: inline-block;
+  position: relative;
+  top: 11px;
+  content: "";
+  background: url("./../../src/img/image 25.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.date__list {
+  flex-wrap: nowrap;
+  margin-top: 3em;
+}
+
+.date__list ul {
+  display: flex;
+}
+@media (max-width: 56.24875em) {
+  .date__list ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.date__list ul li {
+  text-align: left;
+  margin: 0.4rem 0;
+}
+.date__list ul li p {
+  font-size: 1.25em;
+}
+
+.date__list #first,
+.date__list #second {
+  margin-right: 1rem;
+}
+
+.date a {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: #6a6fe0;
+  padding: 0.35em;
+  font-size: 20px;
+  max-width: 300px;
+  min-width: 200px;
+  border-radius: 0.4em;
+  width: 100%;
+}
+@media (min-width: 56.25em) {
+  .date a {
+    min-width: 300px;
+  }
+}
+
+.date__certification {
+  padding: 1em 2em;
+  background-color: white;
+}
+
+.date__certification ul li {
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid #6a6fe0;
+  padding: 1em 1em 1em 0;
+}
+@media (max-width: 56.24875em) {
+  .date__certification ul li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.date__certification ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 1.2em;
+  margin-left: 1em;
+  color: black;
+}
+@media (min-width: 56.25em) {
+  .date__certification ul li a {
+    position: absolute;
+  }
+}
+@media (max-width: 56.24875em) {
+  .date__certification ul li a {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.date__certification ul li:nth-child(2) {
+  border-bottom: 4px solid #6a6fe0;
+}
+
+.date__certification ul li:last-child {
+  border: none;
+}
+
+.date__certification h2 {
+  position: relative;
+  text-align: left;
+  padding-left: 0.6em;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+.date__certification h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -32px;
+  width: 40px;
+  height: 25px;
+  background-color: #6a6fe0;
+}
+
+.date__certification span {
+  background-color: #f3f8fb;
+  display: block;
+  width: 109%;
+  padding: 2em;
+  margin-left: -5%;
+}
+
+.date__certification ul li img {
+  width: 60px;
+  height: 80px;
+}
+@media (max-width: 56.24875em) {
+  .date__certification ul li img {
+    width: 90px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+.video {
+  padding: 0;
+  width: 90%;
+  max-width: 900px;
+  margin: 5em auto;
+  text-align: center;
+  background-color: #f3f8fb;
+}
+
+.video__content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.video__content--image {
+  position: absolute;
+  top: 32%;
+  left: 42%;
+  width: 120px;
+  height: 120px;
+  margin: 0;
+}
+.video__content--image:hover {
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  height: 440px;
+  margin-bottom: 1.5rem;
+}
+
+.video section {
+  margin-bottom: 55em;
+}
+.video section ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  text-align: left;
+  text-indent: 1em;
+  width: 80%;
+  margin-left: 2em;
+  padding: 1em 0;
+}
+
+.video section ul li:first-child {
+  font-size: 25px;
+  border-color: black;
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+}
+
+.material-help li:nth-child(2),
+.material-help li:last-child {
+  border-bottom-color: red;
+}
+
+.material-help li:last-child {
+  margin-bottom: 6rem;
+}
+
+.material-help {
+  float: left;
+  padding: 2em 0em 0em 0em;
+}
+
+.material-help,
+.video aside {
+  width: 46%;
+  background-color: white;
+}
+
+.video aside {
+  float: right;
+  padding: 2em 0em 8em 0em;
+}
+
+.material-help ul li {
+  position: relative;
+}
+
+.material-help ul li a {
+  margin-left: 3rem;
+}
+
+.material-help ul li a img {
+  position: absolute;
+  left: 0;
+  margin-top: -1rem;
+}
+
+.video aside ul li a {
+  position: absolute;
+  margin-top: 0.8rem;
+  margin-left: -0.8rem;
+}
+
+.video section ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#course-text {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background-color: #6a6fe0;
+  font-size: 25px;
+  padding: 0.7em 0;
+  color: white;
+}
+
+.bg-color {
+  display: block;
+  padding: 2rem 1rem;
+  background-color: #f3f8fb;
+}
+
+@media (max-width: 699.98px) {
+  .video__content {
+    width: 100%;
+  }
+  .material-help {
+    position: absolute;
+    width: 90%;
+    margin-top: 650px;
+    display: block;
+    float: none;
+  }
+  #course-text {
+    margin-bottom: 0rem;
+  }
+  .video aside {
+    width: 100%;
+    display: block;
+    padding-bottom: 5rem;
+    float: none;
+  }
+  .footer--video {
+    margin-top: -160px;
+  }
 }

@@ -459,9 +459,10 @@
 }
 .closebtn {
     background-color: glob.$search-box-color;
-    width: f.rem(30);
+    width: 30px;
     height: f.rem(30);
     margin-top: f.rem(-30);
+    margin-left: 20px;
    
 
 }
