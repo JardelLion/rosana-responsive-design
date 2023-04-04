@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozena - Escola Digital</title>
+    
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+   
+
+</head>
+<body>
+    <span id="width"></span>
+    
+    
+    <!--header starts-->
+    <span class="purple-color"></span>
+    <header class="header">
+    
+        <a href="./../../index.html" class="header__logo-link">
+            <img src="./../img/Logo-Final.Rozena.png" style="width: 40px;height:40px;"
+            class="header__logo-link--image" alt="Rosazan - Escola Digital logo">
+        </a>
+
+
+        <div class="search">
+            <input type="text" class="search__box" placeholder="Procure aqui...">
+            <label for="search-box">
+                <img src="./../img/find.png" alt=""class="search__image">
+            </label>
+        </div>
+
+        
+
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Explore Diplomas e Certificados</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="dropdown__menu" >
+                <li>Framer</li>
+                <li>Sketch</li>
+                <li>Invision Studio</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home">Descubra carreiras</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav-bar__link login-account">Login</a>
+                </li>
+        
+                <li>
+                    <a href="#" class="nav-bar__link nav-bar__link--home nav-bar__link--login">Cadastra-se</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <div class="caret-left" id="caret-left-id">
+
+                <button class="closebtn" onclick="closeNav()">
+                
+                    <img src="./../icon/chevron-left-solid.svg" style="width: 40px;" alt="left icon" id="img-left">
+                </button>
+
+                <img  class="perfil-photo" src="./../img/Ellipse 5user;elipse.png" alt="perfil">
+                <p id="user-name">
+                    Nome do Usuário
+                </p>
+
+                
+                
+                <img src="./../img/image 23Sino notificacoes.png" alt="Sino" class="bell">
+                
+                <div class="num-notifi">
+                    <p>10</p>
+                </div>
+            
+            </div>
+            
+            <nav>
+                <a href="#">Minha conta</a>
+                <a href="./aluno.html">Meu perfil</a>
+                <a href="./actualizar_dados.html">Histórico de Cursos</a>
+                <a href="#">Suporte</a>
+                <a href="./index.html">Sair</a>
+            </nav>
+            
+        </div>
+
+        
+
+        <div id="btn-main">
+            <button class="openbtn" onclick="openNav()">
+                &#9776;</button>
+        </div>
+
+
+    </header>
+    <!--ends header-->
+
+
+
+    <main class='free-days' >
+        <div class="gray"></div>
+        <div class="student__box">
+            <img src="./img/Ellipse 5user;elipse.png" alt="">
+            <p class="user-name">Nome do Estudante</p>  
+        </div>
+
+
+
+        
+        <div class="free-days__container">
+
+            <section class="free-days__container--test">
+                <h1>Estude qualquer curso quando e onde quiser</h1>
+    
+                <ul>
+                    <li>Cursos exclusivos Rozena</li>
+                    <li>Especialista com experiências reais.</li>
+                    <li>Conteúdo sempre atual e atualizado</li>
+                </ul>
+
+                <div class="free-days__container--seven-days">
+                   
+                    <div>
+                        <p>7</p>
+                        <span>dias</span>
+                    </div>  
+                  
+
+                    <div>
+                        
+                        <h1>Teste por 7 dias</h1>
+                        <a href="./concluir_compra.html">Quero Testar</a>
+                        
+                    </div>
+
+                </div>
+                
+                
+                
+                
+    
+            </section>
+        
+                
+            <section class="free-days__container--pay">
+                <h1>
+                    <p>KZ</p>
+                    4.967
+                    <p>,99</p>
+                </h1>
+                <br>
+                <p>Acesso total por 1 mês</p>
+                <button>QUERO AGORA</button>
+                <br>
+                <h1>
+                    <p>KZ</p>
+                    19,450
+                    <p>,87</p>
+                </h1>
+                <br>
+                <p>Acesso total por 1 ano</p>
+                <button>QUERO AGORA</button>
+                
+            </section>
+        
+        </div>
+                
+            
+
+
+    <h2>Cursos comprados</h2>
+    <ul>
+        <li>Ainda não possui cursos comprados avulso</li>
+    </ul>
+
+
+        
+
+
+    
+    
+    </main>
+
+
+    
+
+
+
+    <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+        <img src="./../icon/angle-up.svg" alt="">
+    </div>
+ 
+ 
+ 
+ 
+ <footer class="footer--video">
+     <a href="./../../index.html">
+         <img src="./../img/Logo-Final.Rozena.png"
+          alt="" class="logo-image" style="width:40px;height:40px">
+     </a>
+     
+     Rozena 2023 | Politícas de privacidade | Termos de uso | Coockies
+ </footer>
+ 
+ 
+ 
+ 
+ 
+ </body>
+ <script src="./../js/dropdown.js"></script>
+ <script src="./../js/burger.js"></script>
+ <script src="./../js/scrollUp.js"></script>
+
+ 
+ </html>

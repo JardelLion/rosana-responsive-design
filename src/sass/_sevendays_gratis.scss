@@ -1,0 +1,246 @@
+@use "./../sass/util" as u;
+@use "./../sass/global" as glob;
+@use "./../sass/util/functions" as f;
+
+.free-days__container {
+    background: url("./../../src/img/image\ 34.png") #182032;
+    background-size: cover;
+    border-radius: f.rem(32);
+    display: flex;
+
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+    }
+
+
+  
+}
+
+
+.free-days {
+    max-width: 850px;
+
+}
+.student__box > p {
+    font-size: f.rem(28);
+}
+.free-days__container--test {
+  
+    width: 100%;
+   
+    & > h1  {
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+        margin: 2rem;
+
+    }
+
+    & ul {
+        margin-left: 3em;
+        @include u.breakpoints-down(tablet){
+            margin-left: f.rem(16);
+        }
+        font-size: 1.6rem;
+        color: white;
+        margin-top: 3rem;
+
+
+        & li {
+            text-align: center;
+            @include u.breakpoints-up(tablet){
+                text-align: left;
+                list-style: disc;
+            }
+        }
+
+    }
+
+}
+
+
+.free-days__container--seven-days {
+    display: flex;
+
+    & > div:first-child {
+        width: 120px;
+        height: 120px;
+        font-weight: bolder;
+        border-radius: 50%;
+        padding-top: 1.5rem;
+        margin: 1.5rem auto;
+        border: 1px solid #6a6fe0;
+        color: #6a6fe0;
+       @include u.breakpoints-up(tablet){
+        margin-left: 45px;
+       }
+    }
+
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+    }
+
+    & p {
+        font-size: 2rem;
+        font-weight: bolder;
+        
+
+    }
+
+    & span {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    & div h1 {
+    font-size: f.rem(35);
+    font-weight: bold;
+    color: white;
+    @include u.breakpoints-up(tablet){
+        font-size: f.rem(28);
+        margin-top: f.rem(20);
+    }
+    @include u.breakpoints-down(tablet){
+        margin-bottom: 2rem
+    }
+        
+    }
+
+     & div a {
+        display: block;
+        min-width: glob.$min-box-value;
+        max-width: glob.$max-box-value;
+        margin: 0 auto 2rem auto ;
+        padding: .6em .25em;
+        border: 2px solid #6a6fe0;
+        background-color: #2b344b;
+        color: #6a6fe0;
+        font-size: 20px;
+        border-radius: .4em;
+        text-decoration: none;
+        
+    
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+   
+}
+
+
+.free-days__container--pay {
+  
+    width:100%;
+    @include u.breakpoints-up(tablet){
+        margin-top: 110px;
+    }
+   
+}
+
+
+
+.free-days__container--pay button,
+.buy__style button,
+.buy > button,
+.buy > a,
+.buy__book > a {
+    color: white;
+    font-size: 20px;
+    margin: 0 0 25% 0;
+    padding: .6em 2.5em;
+    border-radius: .4em;
+    border: none;
+    background-color: #6a6fe0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+
+
+}
+.free-days__container--pay button{
+    margin: 0 0 2rem 0;
+}
+
+
+.free-days__container--pay h1,
+.free-days__container--pay h1 p,
+.buy__style h1 p,
+.buy__style h1 {
+    display: inline;
+}
+
+.free-days__container--pay h1,
+.buy__style h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.free-days__container--pay h1 p,
+.buy__style h1 p {
+    font-size: 30px;
+    color: white;
+}
+
+
+.free-days__container--pay h1 p:last-child,
+.buy__style h1 p:last-child{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-size: 35px;
+}
+
+
+
+.free-days__container--pay > p,
+.buy__style > p {
+    font-size: 20px;
+    color: white;
+    margin: 1rem 0;
+
+}
+
+
+
+
+
+
+.free-days {
+    margin-bottom: 8.5rem;
+}
+
+.free-days > h2 {
+    position: relative;
+    text-align: left;
+    text-indent: 1rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 30px;
+    font-weight: normal;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 40px;
+        height: 25px;
+        background-color: #6a6fe0;
+
+    }
+}
+
+
+.free-days > ul {
+    text-align: left;
+    margin-left: 5rem;
+    font-size: 20px;
+    margin-top: .5rem;
+
+}

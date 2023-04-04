@@ -17,26 +17,26 @@ videoPlayer.addEventListener('contextmenu', (event) =>{
 })
 
 
-btnImagePlay.addEventListener('click', () =>{
-    if(media.paused){
-        media.play();
-        btnImagePlay.style.display = 'none';
-    }
-});
+// btnImagePlay.addEventListener('click', () =>{
+//     if(media.paused){
+//         media.play();
+//         btnImagePlay.style.display = 'none';
+//     }
+// });
 
-media.addEventListener('click', () =>{
-    if(media.paused){
-        media.play();
-        btnImagePlay.style.display = 'none';
+// media.addEventListener('click', () =>{
+//     if(media.paused){
+//         media.play();
+//         btnImagePlay.style.display = 'none';
        
-    }
-    else if(media.played){
-        media.pause();
-        btnImagePlay.style.display = 'block';
+//     }
+//     else if(media.played){
+//         media.pause();
+//         btnImagePlay.style.display = 'block';
       
-    }
+//     }
        
         
    
-})
+// })
 

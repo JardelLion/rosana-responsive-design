@@ -112,39 +112,50 @@
     <main class="video">
         <div class="gray"></div>
 
-        <div class="player video__player">
-            <video controls>
-              <source src="./../video/O GATILHO.mp4" type="video/mp4">
-             <!-- <source src="video/sintel-short.mp4" type="video/webm">
-              fallback content here -->
-            </video>
-            <div class="controls">
-              <button class="play">
-                <img src="./../img/play.png" alt="">
-              </button>
-              <button class="stop">
-                <img src="./../img/pause.png" alt="">
-              </button>
-              <div class="timer"><div></div><span aria-label="timer">00:00</span></div>
-              <button class="backward">
-                <img src="./../img/backword.png" alt="">
-              </button>
-              <button class="forward">
-                <img src="./../img/forword.png" alt="">
-              </button>
+        <div class="container show-controls video__player">
+            <div class="wrapper">
+                <div class="video-timeline">
+                    <div class="progress-area">
+                        <span>00:00</span>
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <ul class="video-controls">
+                    <li class="options left">
+                        <button class="volume"><i class="volume-high"></i></button>
+                        <input type="range" min="0" max="1" step="any">
+                        <div class="video-timer">
+                            <p class="current-time">00:00</p>
+                            <p class="separator"> / </p>
+                            <p class="video-duration">00:00</p>
+                        </div>
+                    </li>
+                    <li class="options center">
+                        <button class="skip-backward"><i class="backward"></i></button>
+                        <button class="play-pause"><i class="play"></i></button>
+                        <button class="skip-forward"><i class="forward"></i></button>
+                    </li>
+                    <li class="options right">
+                        <div class="playback-content">
+                            <button class="playback-speed"><span class="material-symbols-rounded">slow_motion_video</span></button>
+                            <ul class="speed-options">
+                                <li data-speed="2">2x</li>
+                                <li data-speed="1.5">1.5x</li>
+                                <li data-speed="1" class="active">Normal</li>
+                                <li data-speed="0.75">0.75x</li>
+                                <li data-speed="0.5">0.5x</li>
+                            </ul>
+                        </div>
+                        <button class="pic-in-pic"><span class="material-icons">picture_in_picture_alt</span></button>
+                        <button class="fullscreen"><i class="expand"></i></button>
+                    </li>
+                </ul>
             </div>
-          </div>
+            <video src="./../video/O GATILHO.mp4"></video>
+        </div>
+        <script src="./../js/custumize_player.js"></script>
 
-
-
-<!-- 
-        <div class="video__content video__player">
-            <video src="./video/O GATILHO.mp4" controlslist="nodownload" ></video>
-            <button  class="player-play--center">
-                <img src="./img/image 12comecar.png" alt="" class="video__content--image">
-            </button>
-        </div> -->
-       
+        
         <section>
             <article class="material-help">
                 <ul>

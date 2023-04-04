@@ -438,8 +438,11 @@
     border: f.rem(2) solid glob.$primary-color;
     border-radius: f.rem(50);
     padding: f.rem(2);
-    margin-left: f.rem(-25);
+    margin-left: f.rem(-10);
     padding-right:f.rem(4);
+    @include u.breakpoints-down(tablet){
+        margin-left: f.rem(-10);
+    }
 
     @include u.breakpoints-down(mobile){
         margin-left: f.rem(1);
