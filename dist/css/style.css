@@ -2247,3 +2247,54 @@ video {
   font-size: 20px;
   margin-top: 0.5rem;
 }
+
+.buy__container {
+  background: url("./../../src/img/image 34.png") #182032;
+  background-size: cover;
+  border-radius: 2em;
+  margin-top: 1.5rem;
+}
+.buy__container > h1, .buy__container > p {
+  color: #fff;
+}
+.buy__container > h1 {
+  padding-top: 2rem;
+}
+.buy__container > p {
+  padding: 1rem 0 7rem 0;
+  font-weight: bold;
+}
+.buy__container--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 56.25em) {
+  .buy__container--box {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .buy__container--box .buy__style button {
+    margin-bottom: 2em;
+  }
+}
+
+.buy > a {
+  display: block;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 0.7rem auto;
+}
+
+.buy > h1 {
+  margin: 2rem 0;
+  font-size: 2em;
+}
+@media (min-width: 56.25em) {
+  .buy > h1 {
+    font-size: 3.125em;
+  }
+}

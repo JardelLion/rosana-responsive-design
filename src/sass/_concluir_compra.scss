@@ -1,0 +1,65 @@
+@use  "./../sass/global" as glob;
+@use "./../sass/util" as u;
+
+@use "./../sass/util/functions" as f;
+
+.buy__container {
+    background: url("./../../src/img/image\ 34.png") #182032;
+    background-size: cover;
+    border-radius: 2em;
+    margin-top: 1.5rem;
+
+    & > h1,
+    & > p {
+        color: #fff;
+    }
+
+    & > h1 {
+        padding-top: 2rem;
+    }
+
+    & > p {
+        padding: 1rem 0 7rem 0;
+        font-weight: bold;
+    }
+    
+    &--box {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include u.breakpoints-up(tablet){
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+
+       
+    }
+    
+}
+
+.buy__container--box .buy__style button {
+    @include u.breakpoints-down(tablet){
+        margin-bottom: f.rem(32);
+    }
+}
+
+
+
+.buy > a {
+    display: block;
+    max-width: glob.$max-box-value;
+    min-width: glob.$min-box-value;
+    margin: .7rem auto;
+}
+
+.buy > h1 {
+    margin: 2rem 0;
+    font-size: f.rem(32);
+    @include u.breakpoints-up(tablet){
+        font-size: f.rem(50);
+    }
+}
+
+
