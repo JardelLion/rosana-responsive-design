@@ -1,3 +1,11 @@
 @mixin transition-ease(){
     transition: all .5s ease-in-out;
-}
+};
+
+
+@mixin prefixos($nome-prefixo, $value-prefixo){
+    -webkit-#{$nome-prefixo}: $value-prefixo;
+    -moz-#{$nome-prefixo}: $value-prefixo;
+    -o-#{$nome-prefixo}: $value-prefixo;
+    -ms-#{$nome-prefixo}: $value-prefixo;
+};

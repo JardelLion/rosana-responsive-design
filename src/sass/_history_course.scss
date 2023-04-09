@@ -103,9 +103,11 @@
        
        text-align: left;
        margin: .4rem 0;
+       @include glob.prefixos(margin, .4rem 0);
 
        & p {
         font-size: f.rem(20);
+        @include glob.prefixos(font-size, f.rem(20))
        }
     }
 

@@ -2,6 +2,7 @@
 @use "./src/sass/util/functions" as f;
 @use "./src/sass/global" as glob;
 
+
 .student__box > img{
     display: block;
     width: 150px;
@@ -15,6 +16,8 @@
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    @include glob.prefixos(margin-bottom, 2rem);
+
 }
 
 .student {
@@ -64,12 +67,24 @@
      max-width: glob.$max-box-value;
      min-width: glob.$min-box-value;
      color: black;
+    @include glob.prefixos(padding, .8rem);
+    @include glob.prefixos(width, 100%);
+    @include glob.prefixos(max-width, glob.$max-box-value);
+    @include glob.prefixos(min-width, glob.$min-box-value);
+
+
+
+
 }
 
  .first-table input,
  .second-table input{
      margin-top: 0;
-     border: 1px solid #a7abec;
+    border: 1px solid #a7abec;
+    @include glob.prefixos(margin-top, 0);
+    @include glob.prefixos(border, 1px solid #a7abec);
+
+
    
     
 }
@@ -77,6 +92,8 @@
 .first-table {
     @include u.breakpoints-down(tablet){
         height: 380px;
+        @include glob.prefixos(height, 380px);
+
     }
 }
 
@@ -94,13 +111,16 @@
     margin: 0 auto;
     font-size: 20px;
     color: #737576;
-    // margin-bottom: 5px;
+
+    
  }
 
  
 #student-date .first-table {
   @include u.breakpoints-down(tablet){
     position: relative;
+    @include glob.prefixos(position, relative);
+
   }
 }
 
@@ -108,6 +128,10 @@
    @include u.breakpoints-down(tablet){
     position: relative;
     top: 576px;
+    @include glob.prefixos(position, relative);
+    @include glob.prefixos(top, 576px);
+
+
 
    
    }
@@ -121,6 +145,10 @@
    @include u.breakpoints-down(tablet){
     position: relative;
     top: 580px;
+    @include glob.prefixos(position, relative);
+    @include glob.prefixos(top, 580px);
+
+
    }
 }
 
@@ -130,6 +158,8 @@
 .second-table label[for="password"]{
     @include u.breakpoints-down(tablet){
         margin-top: f.rem(120);
+        @include glob.prefixos(margin-top, f.rem(120));
+
 
     }
    
@@ -195,16 +225,22 @@
  .btn-update-picture{
     @include u.breakpoints-down(tablet){
         display: none;
+        @include glob.prefixos(display, none);
+
         
     }
     @include u.breakpoints-up(tablet){
         margin-top: 72px;
+        @include glob.prefixos(margin-top, 72px);
+
     }
  }
  
 .btn-update-date  {
     @include u.breakpoints-down(tablet){
         margin-top: 45px;
+        @include glob.prefixos(margin-top, 45px);
+
     }
 }
 
@@ -220,6 +256,8 @@
  .second-table input[type='date'] {
     color: black;
     padding: .5rem; 
+    @include glob.prefixos(padding, .5rem);
+
 }
 
  .second-table select {
@@ -228,7 +266,11 @@
     max-width: glob.$max-box-value;
     min-width: glob.$min-box-value;
     padding: .6em;
+    @include glob.prefixos(padding, .6rem);
+
     margin-top: 0;
+    @include glob.prefixos(margin-top, 0);
+
     font-size: f.rem(20); 
     border-radius: .4em;
     border: 1px solid #a7abec;
@@ -245,15 +287,23 @@
  .second-table label[for='file']{
     display: inline;
     position: relative;
+    @include glob.prefixos(position, relative);
+
     display: inline-block;
     padding: 3px 12px;
+    @include glob.prefixos(padding, 3px 12px);
+
     cursor: pointer;
     width: 100%;
     border: 1px solid #a7abec;
     border-radius: .4em;
     font-size: 20px;
     margin-top: 1em;
+    @include glob.prefixos(margin-top, 1rem);
+
     margin-bottom: 1em;
+    @include glob.prefixos(margin-bottom, 1rem);
+
 
      & span img {
         float: left;
@@ -281,17 +331,17 @@
 
  #student-date .second-table .file-upload {
     position: relative;
-     color:  transparent;
-     width: 100%;
-     margin: 0 auto;
-     height: 30px;
-     display: block;
-     margin-top: 2rem;
-     margin-bottom: 1rem;
-     padding: 1.6rem 0;
-     background-color: white;
-     border-radius: .5rem;
-     border: 1px solid #a7abec;
+    color:  transparent;
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.6rem 0;
+    background-color: white;
+    border-radius: .5rem;
+    border: 1px solid #a7abec;
 
 
 

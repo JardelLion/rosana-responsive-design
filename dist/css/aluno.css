@@ -11,6 +11,10 @@
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  -webkit-margin-bottom: 2rem;
+  -moz-margin-bottom: 2rem;
+  -o-margin-bottom: 2rem;
+  -ms-margin-bottom: 2rem;
 }
 
 .student {
@@ -55,17 +59,45 @@ select[name=select] {
   max-width: 300px;
   min-width: 200px;
   color: black;
+  -webkit-padding: 0.8rem;
+  -moz-padding: 0.8rem;
+  -o-padding: 0.8rem;
+  -ms-padding: 0.8rem;
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  -o-width: 100%;
+  -ms-width: 100%;
+  -webkit-max-width: 300px;
+  -moz-max-width: 300px;
+  -o-max-width: 300px;
+  -ms-max-width: 300px;
+  -webkit-min-width: 200px;
+  -moz-min-width: 200px;
+  -o-min-width: 200px;
+  -ms-min-width: 200px;
 }
 
 .first-table input,
 .second-table input {
   margin-top: 0;
   border: 1px solid #a7abec;
+  -webkit-margin-top: 0;
+  -moz-margin-top: 0;
+  -o-margin-top: 0;
+  -ms-margin-top: 0;
+  -webkit-border: 1px solid #a7abec;
+  -moz-border: 1px solid #a7abec;
+  -o-border: 1px solid #a7abec;
+  -ms-border: 1px solid #a7abec;
 }
 
 @media (max-width: 56.24875em) {
   .first-table {
     height: 380px;
+    -webkit-height: 380px;
+    -moz-height: 380px;
+    -o-height: 380px;
+    -ms-height: 380px;
   }
 }
 
@@ -83,6 +115,10 @@ select[name=select] {
 @media (max-width: 56.24875em) {
   #student-date .first-table {
     position: relative;
+    -webkit-position: relative;
+    -moz-position: relative;
+    -o-position: relative;
+    -ms-position: relative;
   }
 }
 
@@ -90,6 +126,14 @@ select[name=select] {
   #student-date .first-table label[for=password] {
     position: relative;
     top: 576px;
+    -webkit-position: relative;
+    -moz-position: relative;
+    -o-position: relative;
+    -ms-position: relative;
+    -webkit-top: 576px;
+    -moz-top: 576px;
+    -o-top: 576px;
+    -ms-top: 576px;
   }
 }
 @media (min-width: 56.25em) {
@@ -102,12 +146,24 @@ select[name=select] {
   .first-table #student-password {
     position: relative;
     top: 580px;
+    -webkit-position: relative;
+    -moz-position: relative;
+    -o-position: relative;
+    -ms-position: relative;
+    -webkit-top: 580px;
+    -moz-top: 580px;
+    -o-top: 580px;
+    -ms-top: 580px;
   }
 }
 
 @media (max-width: 56.24875em) {
   .second-table label[for=password] {
     margin-top: 7.5em;
+    -webkit-margin-top: 7.5em;
+    -moz-margin-top: 7.5em;
+    -o-margin-top: 7.5em;
+    -ms-margin-top: 7.5em;
   }
 }
 
@@ -161,17 +217,29 @@ select[name=select] {
 @media (max-width: 56.24875em) {
   .btn-update-picture {
     display: none;
+    -webkit-display: none;
+    -moz-display: none;
+    -o-display: none;
+    -ms-display: none;
   }
 }
 @media (min-width: 56.25em) {
   .btn-update-picture {
     margin-top: 72px;
+    -webkit-margin-top: 72px;
+    -moz-margin-top: 72px;
+    -o-margin-top: 72px;
+    -ms-margin-top: 72px;
   }
 }
 
 @media (max-width: 56.24875em) {
   .btn-update-date {
     margin-top: 45px;
+    -webkit-margin-top: 45px;
+    -moz-margin-top: 45px;
+    -o-margin-top: 45px;
+    -ms-margin-top: 45px;
   }
 }
 
@@ -183,6 +251,10 @@ select[name=select] {
 .second-table input[type=date] {
   color: black;
   padding: 0.5rem;
+  -webkit-padding: 0.5rem;
+  -moz-padding: 0.5rem;
+  -o-padding: 0.5rem;
+  -ms-padding: 0.5rem;
 }
 
 .second-table select {
@@ -191,7 +263,15 @@ select[name=select] {
   max-width: 300px;
   min-width: 200px;
   padding: 0.6em;
+  -webkit-padding: 0.6rem;
+  -moz-padding: 0.6rem;
+  -o-padding: 0.6rem;
+  -ms-padding: 0.6rem;
   margin-top: 0;
+  -webkit-margin-top: 0;
+  -moz-margin-top: 0;
+  -o-margin-top: 0;
+  -ms-margin-top: 0;
   font-size: 1.25em;
   border-radius: 0.4em;
   border: 1px solid #a7abec;
@@ -201,15 +281,31 @@ select[name=select] {
 .second-table label[for=file] {
   display: inline;
   position: relative;
+  -webkit-position: relative;
+  -moz-position: relative;
+  -o-position: relative;
+  -ms-position: relative;
   display: inline-block;
   padding: 3px 12px;
+  -webkit-padding: 3px 12px;
+  -moz-padding: 3px 12px;
+  -o-padding: 3px 12px;
+  -ms-padding: 3px 12px;
   cursor: pointer;
   width: 100%;
   border: 1px solid #a7abec;
   border-radius: 0.4em;
   font-size: 20px;
   margin-top: 1em;
+  -webkit-margin-top: 1rem;
+  -moz-margin-top: 1rem;
+  -o-margin-top: 1rem;
+  -ms-margin-top: 1rem;
   margin-bottom: 1em;
+  -webkit-margin-bottom: 1rem;
+  -moz-margin-bottom: 1rem;
+  -o-margin-bottom: 1rem;
+  -ms-margin-bottom: 1rem;
 }
 .second-table label[for=file] span img {
   float: left;

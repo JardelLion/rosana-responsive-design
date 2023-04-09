@@ -335,6 +335,14 @@ h2, h3, h4, h5, h6 {
   background-color: white;
   height: 8rem;
   margin-top: -3.75em;
+  -webkit-margin-top: -3.75em;
+  -moz-margin-top: -3.75em;
+  -o-margin-top: -3.75em;
+  -ms-margin-top: -3.75em;
+  -webkit-height: 8rem;
+  -moz-height: 8rem;
+  -o-height: 8rem;
+  -ms-height: 8rem;
   background-color: #bfbcbc;
 }
 
@@ -345,6 +353,10 @@ h2, h3, h4, h5, h6 {
 
 .caret-left > p {
   margin-top: 4.5rem;
+  -webkit-margin-top: 4.5rem;
+  -moz-margin-top: 4.5rem;
+  -o-margin-top: 4.5rem;
+  -ms-margin-top: 4.5rem;
 }
 
 .num-notifi {
@@ -377,6 +389,22 @@ h2, h3, h4, h5, h6 {
   height: 1.875em;
   margin-top: -1.875em;
   margin-left: 20px;
+  -webkit-width: 30px;
+  -moz-width: 30px;
+  -o-width: 30px;
+  -ms-width: 30px;
+  -webkit-height: 1.875em;
+  -moz-height: 1.875em;
+  -o-height: 1.875em;
+  -ms-height: 1.875em;
+  -webkit-margin-top: -1.875em;
+  -moz-margin-top: -1.875em;
+  -o-margin-top: -1.875em;
+  -ms-margin-top: -1.875em;
+  -webkit-margin-left: 1.25em;
+  -moz-margin-left: 1.25em;
+  -o-margin-left: 1.25em;
+  -ms-margin-left: 1.25em;
 }
 
 @media (min-width: 900px) and (max-width: 935px) {
@@ -1464,9 +1492,17 @@ form p {
 .date__list ul li {
   text-align: left;
   margin: 0.4rem 0;
+  -webkit-margin: 0.4rem 0;
+  -moz-margin: 0.4rem 0;
+  -o-margin: 0.4rem 0;
+  -ms-margin: 0.4rem 0;
 }
 .date__list ul li p {
   font-size: 1.25em;
+  -webkit-font-size: 1.25em;
+  -moz-font-size: 1.25em;
+  -o-font-size: 1.25em;
+  -ms-font-size: 1.25em;
 }
 
 .date__list #first,

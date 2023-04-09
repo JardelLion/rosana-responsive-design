@@ -411,6 +411,10 @@
     background-color: white;
     height: 8rem;
     margin-top: f.rem(-60);
+    @include glob.prefixos(margin-top, f.rem(-60));
+    @include glob.prefixos(height, 8rem);
+
+
     background-color: glob.$search-box-color;
    
    
@@ -430,6 +434,8 @@
 }
 .caret-left > p {
     margin-top: 4.5rem;
+    @include glob.prefixos(margin-top, 4.5rem);
+
     
 }
 
@@ -466,6 +472,14 @@
     height: f.rem(30);
     margin-top: f.rem(-30);
     margin-left: 20px;
+    @include glob.prefixos(width, 30px);
+    @include glob.prefixos(height, f.rem(30));
+    @include glob.prefixos(margin-top, f.rem(-30));
+    @include glob.prefixos(margin-left, f.rem(20));
+
+
+
+
    
 
 }
