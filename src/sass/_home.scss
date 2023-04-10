@@ -156,9 +156,9 @@
         width: 100%;
     }
 
-    @include u.breakpoints-up(mobile){
-        display: none;
-    }
+    @include u.breakpoints-down(tablet){
+         display: none;
+     }
 
     
     & input {
@@ -185,7 +185,7 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        left: 15%;
+        left: 25%;
         margin-right: 20px;
         top: 20%;
         @include u.breakpoints-down(mobile){

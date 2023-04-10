@@ -974,7 +974,7 @@ form p {
     width: 100%;
   }
 }
-@media (min-width: 43.75em) {
+@media (max-width: 56.24875em) {
   .search-day {
     display: none;
   }
@@ -1000,7 +1000,7 @@ form p {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 15%;
+  left: 25%;
   margin-right: 20px;
   top: 20%;
 }
