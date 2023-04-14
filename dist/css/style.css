@@ -2235,16 +2235,16 @@ video {
 
 .free-days__container--pay h1 p,
 .buy__style h1 p {
-  font-size: 30px;
+  font-size: 16px;
   color: white;
 }
 
 .free-days__container--pay h1 p:last-child,
 .buy__style h1 p:last-child {
   position: absolute;
-  margin-left: 1rem;
+  margin-left: 0.3rem;
   margin-top: -1rem;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .free-days__container--pay > p,
@@ -2332,5 +2332,145 @@ video {
 @media (min-width: 56.25em) {
   .buy > h1 {
     font-size: 3.125em;
+  }
+}
+
+.buy--bg-big {
+  background: url("./../../src/img/image 32.png") #182032;
+  background-size: cover;
+  border-radius: 2em;
+}
+
+.buy {
+  max-width: 750px;
+  margin-bottom: 2.5em;
+}
+@media (max-width: 56.24875em) {
+  .buy {
+    max-width: 500px;
+  }
+}
+
+.buy__with-discont img {
+  width: 300px;
+  margin-top: 5.9375em;
+  height: 420px;
+  background-color: #f8e6c1;
+  border-radius: 0.5rem;
+  border: 5px solid #6a6fe0;
+  margin-bottom: 6.4rem;
+}
+@media (max-width: 43.74875em) {
+  .buy__with-discont img {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+
+.buy_container {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 56.24875em) {
+  .buy_container {
+    flex-direction: column;
+  }
+}
+
+.buy__with-discont {
+  margin: 0 1.5rem;
+}
+
+.buy__book {
+  margin: 0 0.5rem;
+}
+
+.buy__with-discont.buy__style > h1 {
+  display: block;
+}
+
+.buy__with-discont.buy__style > button {
+  padding: 0.6rem 0;
+  max-width: 300px;
+  min-width: 265px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#discont-number {
+  display: block;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0.6rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.buy__book.versionamento-context {
+  height: 100%;
+  background: none;
+  color: white;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.buy__book > h1 {
+  color: #6a6fe0;
+  margin-bottom: 2rem;
+  display: block;
+}
+@media (min-width: 43.75em) {
+  .buy__book > h1 {
+    font-size: 1.5625em;
+  }
+}
+
+.buy__book ol {
+  margin: 0 auto;
+}
+@media (min-width: 56.25em) {
+  .buy__book ol {
+    width: 100%;
+  }
+}
+
+.buy__book ol > h2 {
+  text-align: left;
+}
+
+.buy__book > a {
+  display: block;
+  text-decoration: none;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 0 auto;
+  margin-top: 2.3rem;
+  padding: 0.5rem 0;
+  background-color: #6a6fe0;
+  border-style: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1.2rem;
+}
+@media (max-width: 56.24875em) {
+  .buy__book > a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .buy__with-discont.buy__style > button {
+    min-width: 100%;
+  }
+  #discont-number {
+    font-size: 14px;
+    min-width: 0;
+  }
+  .buy__book > a {
+    min-width: 0;
   }
 }

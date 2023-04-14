@@ -1,0 +1,273 @@
+@use "./../sass/global" as glob;
+@use "./../sass/util/functions" as f;
+@use "./../sass/util"as u;
+
+.buy--bg-big {
+    background: url("./../../src/img/image\ 32.png") #182032;
+    background-size: cover;
+    border-radius: 2em;
+
+}
+.buy {
+    max-width: 750px;
+    margin-bottom: f.rem(40);
+    @include u.breakpoints-down(tablet){
+        max-width: 500px;
+    }
+}
+
+
+.buy__with-discont img {
+    width: 300px;
+    margin-top: f.rem(95);
+    @include u.breakpoints-down(mobile){
+       width: 80%;
+       max-width: 280px;
+
+    }
+   
+    height: 420px;
+    background-color: #f8e6c1;
+    border-radius: .5rem;
+    border: 5px solid #6a6fe0;
+    margin-bottom: 6.4rem;
+    
+}
+
+
+.buy_container {
+    display: flex;
+    justify-content: center;
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+    }
+}
+.buy__with-discont {
+    margin: 0 1.5rem;
+    
+
+}
+
+
+
+.buy__book {
+    margin: 0 .5rem;
+    
+   
+}
+
+
+
+.buy__with-discont.buy__style > h1 {
+    display: block;
+
+}
+
+.buy__with-discont.buy__style > button {
+    padding: .6rem 0;
+    max-width: glob.$max-box-value;
+    min-width: glob.$min-box-value + 65px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#discont-number {
+    display: block;
+    min-width: glob.$min-box-value;
+    max-width: glob.$max-box-value;
+    margin: 0 auto;
+    padding: .6rem 0;
+    border-radius: .5rem;
+
+    text-align: center;
+    font-size: f.rem(20);
+    font-weight: bold;
+
+    margin-bottom: 1rem;
+}
+
+.buy__book.versionamento-context {
+    height: 100%;
+    background: none;
+    color: white;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.buy__book > h1 {
+    color: #6a6fe0;
+    margin-bottom: 2rem;
+    display: block;
+    @include u.breakpoints-up(mobile){
+        font-size: f.rem(25);
+
+    }
+    
+}
+
+.buy__book ol {
+   @include u.breakpoints-up(tablet){
+    width: 100%;
+   }
+  
+    margin: 0 auto;
+
+
+    
+    
+}
+
+.buy__book ol > h2 {
+   
+    text-align: left;
+}
+
+.buy__book > a {
+    display: block;
+    text-decoration: none;
+    max-width: glob.$max-box-value;
+    min-width: glob.$min-box-value;
+    @include u.breakpoints-down(tablet){
+        width: 100%;
+    }
+    margin: 0 auto;
+    margin-top: 2.3rem;
+    padding: .5rem 0;
+    background-color: #6a6fe0;
+    border-style: none;
+    border-radius: .4rem;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 350px){
+    .buy__with-discont.buy__style > button {
+        min-width: 100%;
+    }
+    #discont-number {
+        font-size: 14px;
+        min-width: 0;
+    }
+    .buy__book > a {
+    
+        min-width: 0;
+        
+    }
+
+}
+// @media screen 
+// and (min-width:$media_port_view) 
+// and (max-width:$media_port_view_medium){
+
+//     .buy--bg-big{
+//         margin-top: 4rem;
+       
+//     }
+
+    
+//     .buy__with-discont {
+//         width: 30%;
+      
+//     }
+
+
+//     .buy__with-discont img {
+//         width: 250px;
+//         margin-bottom: 6.8rem;
+//     }
+
+
+//     .buy__book {
+//         width: 420px;
+//         padding-top: 0;
+   
+//     }
+
+//     .buy__with-discont.buy__style > p {
+//         width: 100%;
+//         font-size: 1rem;
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen 
+// and (min-width:50px) 
+// and (max-width:$media_port_view){
+
+//     .buy {
+//         max-width: 500px;
+//     }
+
+
+//     .buy--bg-big{
+//         margin-top: 4rem;
+//     }
+
+//     .buy__with-discont {
+//         width: 100%;
+//         display: block;
+//         float: none;
+//         margin: 0;
+//         padding: 0;
+      
+//     }
+
+
+//     .buy__with-discont img {
+//         width: 50%;
+//         min-width: 350px;
+
+//     }
+
+
+//     .buy__book {
+//         width: 80%;
+//         min-width: 450px;
+        
+//         float: none;
+//         margin: 0 auto;
+//         & li {
+//             font-size: 1.2rem;
+//         }
+   
+//     }
+
+//     .buy__with-discont.buy__style > p {
+//         width: 100%;
+//         font-size: 1rem;
+//     }
+
+   
+
+
+//     #discont-number,
+//     .buy__with-discont.buy__style > button {
+//         width: 60%;
+//         margin: 1rem auto;
+//     }
+    
+
+// }
