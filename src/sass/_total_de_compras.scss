@@ -1,0 +1,44 @@
+@use "./global" as glob;
+@use "./util/functions" as f;
+@use "./util"as u;
+
+.bank__total-item-inf {
+    display: flex;
+    
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+
+    }
+    & .bank-inf {
+        @include u.breakpoints-down(tablet){
+            width: 100%;
+            height: 270px;
+           
+            max-width: glob.$max-box-value;
+        }
+       
+    }
+}
+
+
+.bank__total-item--buy {
+    
+    
+    background: url("./../../src/img/image\ 36.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+
+    & h1 {
+        display: block;
+        margin-top: 27%;
+       
+        width:100%;
+        margin: 27% auto 0 auto;
+        @include u.breakpoints-down(tablet){
+            margin-top: 40%;
+        }
+        text-align: center;
+    }
+}

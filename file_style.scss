@@ -1,0 +1,129 @@
+@use "./src/sass/util/functions" as f;
+@use "./src/sass/global" as glob;
+@use "./src/sass/util" as u;
+
+div.content,
+div.content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    max-width: glob.$max-box-value;
+    @include u.breakpoints-down(mobile){
+        flex-direction: column;
+    }
+
+
+    & .btn,
+    & .btn2 {
+        height: 50px;
+        width: 170px;
+
+        & button {
+            margin-top: 0;
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: f.rem(18);
+            border-radius: 5px;
+            padding: 0;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                background: url("./../../src/icon/file-image.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 40px;
+                top: 10%;
+                left: -38px;
+                @include u.breakpoints-down(mobile){
+                    left: -34px;
+                }
+
+
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                background: url("./../../src/icon/file-pdf.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 35px;
+                height: 40px;
+                top: 10%;
+                right: -44px;
+                @include u.breakpoints-down(mobile){
+                    right: -39px;
+                }
+
+
+            }
+
+
+            &:hover {
+                background-color: hsl(0, 0%, 0%);
+            }
+        }
+    }
+
+    & .file-name,
+    & .file-name2 {
+        position: relative;
+        background-color: #6a6fe0;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-left: 15px;
+        user-select: none;
+        display: none;
+        @include u.breakpoints-down(mobile){
+            margin-top: 4px;
+            width: 100%;
+            max-width: glob.$max-box-value;
+            min-width: glob.$min-box-value;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 15px;
+            width: 15px;
+            background-color:#6a6fe0 ;
+            left: -7px;
+            top: 50%;
+            z-index:  -1;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+
+        &::after {
+            @include u.breakpoints-down(mobile){
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background-color:#6a6fe0 ;
+                right: -7px;
+                top: 50%;
+                z-index:  -1;
+                transform: translateY(-50%) rotate(45deg);
+
+            }
+            
+        }
+
+    }
+
+
+}

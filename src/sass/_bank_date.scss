@@ -1,0 +1,159 @@
+@use "./../sass/global" as glob;
+@use "./../sass/util" as u;
+@use "./../sass/util/functions" as f;
+
+.bank-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include u.breakpoints-down(tablet){
+        flex-direction: column;
+    }
+}
+
+
+.bank-inf {
+    border: 1.5px solid #acaeed;
+    border-radius: 1rem;
+    width: 60%;
+    @include u.breakpoints-down(tablet){
+        width: 100%;
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
+
+    }
+   
+
+    margin: 0  auto 2rem auto;
+    padding: .5rem;
+    text-align: left;
+    text-indent: 1rem;
+    display: inline-block;
+
+    & h1 {
+        color:#6a6fe0;
+        @include u.breakpoints-down(tablet){
+            font-size: f.rem(28);
+        }
+      
+       
+    }
+
+
+    & li {
+        list-style: none;
+        margin: .2rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+.bank-container .second-table {
+    text-align: left;
+    position: relative;
+    @include u.breakpoints-up(tablet){
+        margin-top: f.rem(80);
+    }
+
+    & h1 {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        
+      
+
+        & > p {
+            margin-left: -3rem;
+            margin-top: .5rem;
+        }
+
+        & > p:last-child {
+            top: 25%;
+            margin-left: .5rem;
+            margin-top: -27px;
+        }
+    }
+
+
+    & h2 {
+        font-size: 2rem;
+        color: #6a6fe0;
+        @include u.breakpoints-down(tablet){
+            width: 100%;
+            text-align: center;
+            font-size: f.rem(28);
+
+
+        }
+    }
+  
+
+    
+}
+
+
+.bank-container .second-table input {
+    background-color: white; 
+    margin-top: 1rem;
+}
+
+
+.bank-container .second-table button {
+    display: block;
+    width: 80%;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.bank > button {
+   
+    width: 50%;
+    background-color: #e06abf;
+    @include u.breakpoints-down(mobile){
+        width: 80%;
+       
+    }
+}
+
+
+
+
+
+//total item to buy stylesheet
+.bank__total-item-inf .bank-inf {
+    width: 49%;
+    height: 300px;
+    
+}
+
+.bank__total-item--buy {
+    
+    background: url("../../img/image\ 36.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    float: left;
+
+    & h1 {
+        display: block;
+        margin-top: 27%;
+        margin-left: 1rem;
+        width:90%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

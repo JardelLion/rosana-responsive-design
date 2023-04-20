@@ -1,0 +1,135 @@
+div.content,
+div.content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+@media (max-width: 43.74875em) {
+  div.content,
+  div.content2 {
+    flex-direction: column;
+  }
+}
+div.content .btn, div.content .btn2,
+div.content2 .btn,
+div.content2 .btn2 {
+  height: 50px;
+  width: 170px;
+}
+div.content .btn button, div.content .btn2 button,
+div.content2 .btn button,
+div.content2 .btn2 button {
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.125em;
+  border-radius: 5px;
+  padding: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+div.content .btn button::before, div.content .btn2 button::before,
+div.content2 .btn button::before,
+div.content2 .btn2 button::before {
+  position: absolute;
+  content: "";
+  background: url("./../../src/icon/file-image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 40px;
+  top: 10%;
+  left: -38px;
+}
+@media (max-width: 43.74875em) {
+  div.content .btn button::before, div.content .btn2 button::before,
+  div.content2 .btn button::before,
+  div.content2 .btn2 button::before {
+    left: -34px;
+  }
+}
+div.content .btn button::after, div.content .btn2 button::after,
+div.content2 .btn button::after,
+div.content2 .btn2 button::after {
+  position: absolute;
+  content: "";
+  background: url("./../../src/icon/file-pdf.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 40px;
+  top: 10%;
+  right: -44px;
+}
+@media (max-width: 43.74875em) {
+  div.content .btn button::after, div.content .btn2 button::after,
+  div.content2 .btn button::after,
+  div.content2 .btn2 button::after {
+    right: -39px;
+  }
+}
+div.content .btn button:hover, div.content .btn2 button:hover,
+div.content2 .btn button:hover,
+div.content2 .btn2 button:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+div.content .file-name, div.content .file-name2,
+div.content2 .file-name,
+div.content2 .file-name2 {
+  position: relative;
+  background-color: #6a6fe0;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  user-select: none;
+  display: none;
+}
+@media (max-width: 43.74875em) {
+  div.content .file-name, div.content .file-name2,
+  div.content2 .file-name,
+  div.content2 .file-name2 {
+    margin-top: 4px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+  }
+}
+div.content .file-name::before, div.content .file-name2::before,
+div.content2 .file-name::before,
+div.content2 .file-name2::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #6a6fe0;
+  left: -7px;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%) rotate(45deg);
+}
+@media (max-width: 43.74875em) {
+  div.content .file-name::after, div.content .file-name2::after,
+  div.content2 .file-name::after,
+  div.content2 .file-name2::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #6a6fe0;
+    right: -7px;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}

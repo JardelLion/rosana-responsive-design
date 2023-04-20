@@ -42,27 +42,108 @@ form{
 
 .open-account__btn {
     display: block;
-        width:100%;
-        max-width: glob.$max-box-value;
-        min-width: glob.$min-box-value;
-        margin: 1rem auto;
+    width:100%;
+    max-width: glob.$max-box-value;
+    min-width: glob.$min-box-value;
+    margin: 1rem auto;
 
-        padding: 0.5rem;
-        font-size: 1.2rem;
-        border-radius: 0.5rem;
-        border-style: solid;
-        border-width: 0.05rem;
-        border-color: glob.$primary-color;
-        color: glob.$primary-color;
-        background-color: white;
-        box-shadow: f.rem(3) f.rem(5) f.rem(4) rgb(236, 228, 228);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.05rem;
+    //border-color: glob.$primary-color;
+    color:#fff;
+    //color: glob.$primary-color;
+    //background-color: white;
+    box-shadow: f.rem(3) f.rem(5) f.rem(4) rgb(236, 228, 228);
 
 
         &:hover {
-            cursor: pointer;
-            background-color: glob.$primary-color;
+            //background-color: glob.$primary-color;
             color: #fff;
         }
 
 }
 
+// password area
+.password-container {
+   
+    & .error-text {
+        background-color: #F8D7DA;
+        padding: 8px 0;
+        border-radius: 5px;
+        color: #8B3E46;
+        border: 1px solid #F5C6CB;
+        display: none;
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
+        margin: 0 auto;
+
+        &.matched {
+            background-color: #d4edda;
+            color: #588c64;
+            border-color: #c3e6cb;
+        }
+    }
+
+    & .field {
+        
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+       
+        & div {
+            position: relative;
+        }
+        
+
+        & input,
+        & div input {
+            height: 100%;
+            transition: all 0.3s;
+            max-width: glob.$max-box-value;
+            min-width: glob.$min-box-value;
+            margin: 0;
+           
+
+            &:focus {
+                border-color: #27ae60;
+                box-shadow: inser 0 0 3px #2fd072;;
+            }
+        }
+
+        & div .show {
+            position: absolute;
+            right: 35px;
+            top:38%;
+            transform: translateX(-50%);
+            font-weight: 600;
+            user-select: none;
+            cursor: pointer;
+            display: none;
+
+            &.active {
+                color: #27ae60;
+                background-color: transparent;
+            }
+        }
+    }
+
+
+}
+.open-account__btn{
+    background-color: #27ae60;
+    cursor: no-drop;
+    opacity: .7;
+    transition: all 0.3s;
+}
+.open-account__btn.active {
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.open-account__btn.active:hover {
+    background-color: #219150;
+}

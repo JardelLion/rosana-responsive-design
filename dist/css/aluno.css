@@ -278,6 +278,100 @@ select[name=select] {
   color: black;
 }
 
+div.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 200px;
+}
+@media (min-width: 56.25em) {
+  div.content {
+    margin-top: 4.1rem;
+    margin-bottom: 2rem;
+    -webkit-margin-top: 4.1rem;
+    -moz-margin-top: 4.1rem;
+    -o-margin-top: 4.1rem;
+    -ms-margin-top: 4.1rem;
+    -webkit-margin-bottom: 2rem;
+    -moz-margin-bottom: 2rem;
+    -o-margin-bottom: 2rem;
+    -ms-margin-bottom: 2rem;
+  }
+}
+div.content input {
+  display: none;
+}
+div.content .btn {
+  position: relative;
+  height: 50px;
+  width: 170px;
+}
+div.content .btn button {
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.125em;
+  border-radius: 5px;
+  padding: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #6a6fe0;
+}
+div.content .btn button::before {
+  position: absolute;
+  content: "";
+  background: url("./../../src/icon/file-image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 40px;
+  top: 10%;
+  left: -40px;
+}
+div.content .btn button::after {
+  position: absolute;
+  content: "";
+  background: url("./../../src/icon/file-pdf.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 40px;
+  top: 10%;
+  right: -40px;
+}
+div.content .btn button:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+div.content .file-name {
+  position: relative;
+  background-color: #6a6fe0;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  user-select: none;
+  display: none;
+}
+div.content .file-name::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #6a6fe0;
+  left: -7px;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%) rotate(45deg);
+}
+
 .second-table label[for=file] {
   display: inline;
   position: relative;
@@ -322,58 +416,11 @@ select[name=select] {
   top: 22%;
 }
 
-#student-date .second-table .file-upload {
-  position: relative;
-  color: transparent;
-  width: 100%;
-  margin: 0 auto;
-  height: 30px;
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding: 1.6rem 0;
-  background-color: white;
-  border-radius: 0.5rem;
-  border: 1px solid #a7abec;
-}
-#student-date .second-table .file-upload::-webkit-file-upload-button {
-  visibility: hidden;
-  margin-top: 0.5rem;
-}
-#student-date .second-table .file-upload::before {
-  position: absolute;
-  content: "selecione o arquivo";
-  color: black;
-  background-image: url("./../../src/img/image 30.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -1px;
-  left: 0;
-  width: 55px;
-  height: 50px;
-  text-indent: 4.2rem;
-  line-height: 50px;
-  font-size: 1.2rem;
-}
-#student-date .second-table .file-upload::after {
-  display: none;
-  position: absolute;
+.remove-pseudo::before {
   content: "";
+  display: none;
 }
-
-#student-date .second-table .file-upload--style {
-  color: black;
-  text-indent: -5rem;
-  box-sizing: content-box;
-  padding: 0.7rem 1rem;
-  padding-top: 0.4rem;
-}
-
-#student-date .second-table .file-upload--style::before {
-  content: " ";
-}
-
-#student-date .second-table .file-upload {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+.remove-pseudo::after {
+  content: "";
+  display: none;
 }

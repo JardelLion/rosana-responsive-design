@@ -7,7 +7,7 @@
     <title>Rozena - Escola Digital</title>
     
     <link rel="stylesheet" href="./../../dist/css/style.css">
-   
+   <link rel="stylesheet" href="./../../dist/css/file_style.css">
 
 </head>
 <body>
@@ -110,91 +110,144 @@
     <!--ends header-->
 
     
-
-    <main class='buy buy--bg-big'>
+    <main class='buy bank'>
         <div class="gray"></div>
 
-        <div class="buy_container">
+        <div class="bank__total-item-inf">
+            <!--start the first total item to buy-->
+            <div class="bank-inf bank__total-item--buy">
+                <h1>2 Compras por Concluir</h1>
+            
+            </div>
+
+            <!--end the total info itm to buy-->
+
+        
+            <!--start the bank information-->
+            <div class="bank-inf">
+                <h1>Dados bancários</h1>
+            
+                <ul>
+                    <h2>Banco Bai</h2>
+                    <li>Nome da conta: Debliw Corp</li>
+                    <li>N de conta: 87528857</li>
+                    <li>IBAN: 0009 8857 8765 8765 9</li>
+        
+                </ul>
+        
+                <ul>
+                    <h2>Banco Atlântico</h2>
+                    <li>Nome da conta: Debliw Corp</li>
+                    <li>N de conta: 87528857</li>
+                    <li>IBAN: 0009 8857 8765 8765 9</li>
+        
+                </ul>
+            </div>
+
+            <!--ends the bank information-->
+        </div>
+
+        
+
+        
+        
+       
+        
+
+
+
+        <!--start the first item to buy-->
+        <div class="buy__container bank-container">
+           <br>
             <section class="buy__with-discont buy__style">
                 <img src="./../img/image 32.png" alt="">
-                <br>
+                  
+            </section>
+           
+            <section class="buy__book buy__style second-table">
+                <h2>
+                    Guia completo sobre Renda Variável
+
+                </h2>
+
                 <h1>
                     <p>KZ</p>
-                    4.967
+                   4.967
                     <p>,99</p>
                 </h1>
                 <br>
                 
-                <p>Tem cupão de desconto?</p>
-                <input type="text" value=""
-                id="discont-number"
-                placeholder="Código do cupão">
-                
-                <button>Aplica cupão</button>
+                   
+                <div class="content">
+                    <input type="file" id="default-btn" hidden required>
+                    <div class="btn">
+                        <button onclick="active()" id="custom-btn">Choose a file</button>
+                    </div>
+                    <div class="file-name">No file chosen</div>
+                </div>
+    
                 <br>
                 
-    
-            </section>
-        
-                
-            <section class="buy__book versionamento-context ">
-                <h1>
-                    Guia completo sobre Renda Variável
-    
-                </h1>
-                <ol>
-                    <h2>Tópicos do ebook:</h2>
-                    <li class="buy__book--subtitle">
-                        Contray to popular belief, Lorem
-                        ipsum is not simply random tex.
-                    </li>
-                    <ul>
-                        <li>
-                            consectetur, from a Lorem ipsum 
-                            passage
-                        </li>
-    
-                        <li>
-                            and going through the cites
-                        </li>
-    
-                        <li>of the word in classical literature</li>
-                        <li>discovered the undoubtable sourc.</li>
-                    </ul>
-    
-                    <li class="buy__book--subtitle">It has roots in a piece of classical Latin literature</li>
-    
-                    <ul>
-                        <li>from 45 BC, makin it over 20000 year old.</li>
-                        <li>Richard McClintock, a Latin professonr</li>
-                        <li>at Hampden-Sydeney College in Virginia</li>
-                    </ul>
-    
-    
-                    <li class="buy__book--subtitle">Looked up one of the more obscure Latin words</li>
-                    <ul>
-                        <li>consectetur, from a Lorem ipsum passage</li>
-                        <li>and going trhough te cites</li>
-                        <li>of the word in classical literature</li>
-                        <li>discovered the undoubtable source</li>
-                    </ul>
-                </ol>
-                <a href="./dados-bancarios.html">SEGUINTE</a>
+                <button>CONCLUIR COMPRA</button>
                 
             </section>
-              
 
+           
+    
         </div>
-        
 
-    </main>
 
-    <div id="jsScroll" class="scroll" onclick="scrollToTop();">
-        <img src="./../icon/angle-up.svg" alt="">
-     </div>
+        <!--start another item to buy-->
+
+        <div class="buy__container bank-container ">
+            <br>
+             <section class="buy__with-discont buy__style">
+                 <img src="./../img/image 32.png" alt="">
+                   
+             </section>
+            
+             <section class="buy__book buy__style second-table">
+                 <h2>
+                     Guia completo sobre Renda Variável
+ 
+                 </h2>
+ 
+                 <h1>
+                     <p>KZ</p>
+                    4.967
+                     <p>,99</p>
+                 </h1>
+                 <br>
+                 
+                    
+                <div class="content2">
+                    <input type="file" id="default-btn2" hidden required>
+                    <div class="btn2">
+                        <button onclick="active2()" id="custom-btn2">Choose a file</button>
+                    </div>
+                    <div class="file-name2">No file chosen</div>
+                </div>
+     
+                 <br>
+                 
+                 <button>CONCLUIR COMPRA</button>
+                 
+             </section>
+ 
+            
+     
+         </div>
  
 
 
+        
+
+        
+            
+                
+            
+
+    </main>
 
 
 
@@ -206,16 +259,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+<div id="jsScroll" class="scroll" onclick="scrollToTop();">
+    <img src="./../icon/angle-up.svg" alt="">
+ </div>
 
 
 <footer>
@@ -232,6 +278,7 @@
 
 
 </body>
+<script src="./../js/file_btn.js"></script>
 <script src="./../js/dropdown.js"></script>
 <script src="./../js/burger.js"></script>
 <script src="./../js/scrollUp.js"></script>
