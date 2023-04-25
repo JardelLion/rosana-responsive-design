@@ -1,7 +1,8 @@
 const pswrd_1 = document.querySelector('#pswrd_1');
 const pswrd_2 = document.querySelector("#pswrd_2");
-const errorText = document.querySelector('.error-text')
-const showBtn = document.querySelector('.show');
+const errorText = document.querySelector('.error-text');
+const openEye = document.querySelector('.open-eye');
+const closeEye = document.querySelector('.close-eye');
 
 const btn = document.querySelector('.open-account__btn')
 
@@ -36,24 +37,25 @@ btn.onclick = function() {
 
 function active_2(){
     if(pswrd_2.value != ''){
-        showBtn.style.display = 'block';
-        showBtn.onclick = function(){
+        openEye.style.display = 'block';
+        openEye.onclick = function(){
             if((pswrd_2.type == 'password') && (pswrd_1.type == 'password')){
                 pswrd_1.type = 'text';
                 pswrd_2.type = 'text';
-                this.textContent = 'HIDE'
-                this.classList.add('active')
-            }else{
-                pswrd_1.type = 'password';
-                pswrd_2.type = 'password';
-                this.textContent = 'SHOW'
-                this.classList.remove('active');
-
+               closeEye.style.display = 'block';
+               openEye.style.display = 'none';
             }
         }
 
-    }else {
-        showBtn.style.display = 'none';
+        closeEye.onclick = function() {
+            if((pswrd_2.type == 'text') && (pswrd_1.type == 'text')){
+                pswrd_1.type = 'password';
+                pswrd_2.type = 'password';
+                openEye.style.display = 'block';
+                closeEye.style.display = 'none'
+
+            }
+        }
 
     }
 }

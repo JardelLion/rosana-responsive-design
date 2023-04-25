@@ -5,6 +5,9 @@
 .open-account__form form,
 form{
     width: 80%;
+    @include u.breakpoints-down(mobile){
+        width:100%;
+    }
     max-width: f.rem(850);
     margin: 0 auto;
 
@@ -21,22 +24,22 @@ form{
         border-radius: 0.5rem;
         border-style: solid;
         border-color: glob.$search-box-color;
-        
+
         &:hover {
             border-color:glob.$primary-color;
         }
-        
 
-        
+
+
     }
     p {
         width: 100%;
         margin: 2.2rem auto;
-        
+
     }
 
 
-    
+
 }
 
 
@@ -67,8 +70,34 @@ form{
 }
 
 // password area
+
+
+.field {
+    display: block;
+    width:100%;
+    max-width: glob.$max-box-value + 75px;
+    min-width: glob.$min-box-value;
+    margin: 15px auto;
+
+    position: relative;
+
+
+
+    & .open-eye,
+    & .close-eye {
+        position: absolute;
+        top: 10px;
+        right: 45px;
+        display: none;
+       
+
+       
+    }
+}
+
+
 .password-container {
-   
+
     & .error-text {
         background-color: #F8D7DA;
         padding: 8px 0;
@@ -88,25 +117,22 @@ form{
     }
 
     & .field {
-        
+        max-width: glob.$max-box-value;
+        min-width: glob.$min-box-value;
         height: 45px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin: 15px 0;
-       
-        & div {
-            position: relative;
-        }
-        
+        align-items: center;
+        margin: 15px auto;
 
-        & input,
-        & div input {
-            height: 100%;
+
+        & input {
             transition: all 0.3s;
             max-width: glob.$max-box-value;
             min-width: glob.$min-box-value;
             margin: 0;
-           
+
 
             &:focus {
                 border-color: #27ae60;
@@ -114,10 +140,9 @@ form{
             }
         }
 
-        & div .show {
+        & div.show {
             position: absolute;
-            right: 35px;
-            top:38%;
+            right: 15px;
             transform: translateX(-50%);
             font-weight: 600;
             user-select: none;
@@ -131,8 +156,19 @@ form{
         }
     }
 
+    & #pswrd_2 {
+        // display: block;
+        // position: relative;
+
+    }
+
 
 }
+
+// .password-container .field:last-child {
+//     position: relative;
+// }
+
 .open-account__btn{
     background-color: #27ae60;
     cursor: no-drop;

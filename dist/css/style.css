@@ -804,6 +804,12 @@ form {
   max-width: 53.125em;
   margin: 0 auto;
 }
+@media (max-width: 43.74875em) {
+  .open-account__form form,
+  form {
+    width: 100%;
+  }
+}
 .open-account__form form input,
 form input {
   display: block;
@@ -846,6 +852,21 @@ form p {
   color: #fff;
 }
 
+.field {
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  min-width: 200px;
+  margin: 15px auto;
+  position: relative;
+}
+.field .open-eye, .field .close-eye {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  display: none;
+}
+
 .password-container .error-text {
   background-color: #F8D7DA;
   padding: 8px 0;
@@ -863,40 +884,38 @@ form p {
   border-color: #c3e6cb;
 }
 .password-container .field {
+  max-width: 300px;
+  min-width: 200px;
   height: 45px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 15px 0;
+  align-items: center;
+  margin: 15px auto;
 }
-.password-container .field div {
-  position: relative;
-}
-.password-container .field input, .password-container .field div input {
-  height: 100%;
+.password-container .field input {
   transition: all 0.3s;
   max-width: 300px;
   min-width: 200px;
   margin: 0;
 }
-.password-container .field input:focus, .password-container .field div input:focus {
+.password-container .field input:focus {
   border-color: #27ae60;
   box-shadow: inser 0 0 3px #2fd072;
 }
-.password-container .field div .show {
+.password-container .field div.show {
   position: absolute;
-  right: 35px;
-  top: 38%;
+  right: 15px;
   transform: translateX(-50%);
   font-weight: 600;
   user-select: none;
   cursor: pointer;
   display: none;
 }
-.password-container .field div .show.active {
+.password-container .field div.show.active {
   color: #27ae60;
   background-color: transparent;
 }
-
 .open-account__btn {
   background-color: #27ae60;
   cursor: no-drop;
