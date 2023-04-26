@@ -88,6 +88,7 @@ form{
         position: absolute;
         top: 10px;
         right: 45px;
+        cursor: pointer;
         display: none;
        
 
@@ -96,81 +97,32 @@ form{
 }
 
 
-.password-container {
-
-    & .error-text {
-        background-color: #F8D7DA;
-        padding: 8px 0;
-        border-radius: 5px;
-        color: #8B3E46;
-        border: 1px solid #F5C6CB;
-        display: none;
-        max-width: glob.$max-box-value;
-        min-width: glob.$min-box-value;
-        margin: 0 auto;
-
-        &.matched {
-            background-color: #d4edda;
-            color: #588c64;
-            border-color: #c3e6cb;
-        }
-    }
-
-    & .field {
-        max-width: glob.$max-box-value;
-        min-width: glob.$min-box-value;
-        height: 45px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 15px auto;
 
 
-        & input {
-            transition: all 0.3s;
-            max-width: glob.$max-box-value;
-            min-width: glob.$min-box-value;
-            margin: 0;
-
-
-            &:focus {
-                border-color: #27ae60;
-                box-shadow: inser 0 0 3px #2fd072;;
-            }
-        }
-
-        & div.show {
-            position: absolute;
-            right: 15px;
-            transform: translateX(-50%);
-            font-weight: 600;
-            user-select: none;
-            cursor: pointer;
-            display: none;
-
-            &.active {
-                color: #27ae60;
-                background-color: transparent;
-            }
-        }
-    }
-
-    & #pswrd_2 {
-        // display: block;
-        // position: relative;
-
-    }
-
+.error-text {
+    background-color: #F8D7DA;
+    padding: 8px 0;
+    border-radius: 5px;
+    color: #8B3E46;
+    border: 1px solid #F5C6CB;
+    display: none;
+    max-width: glob.$max-box-value;
+    min-width: glob.$min-box-value;
+    margin: 0 auto;
 
 }
 
-// .password-container .field:last-child {
-//     position: relative;
-// }
+ .matched {
+    background-color: hsl(134, 41%, 88%);
+    color: hsl(134, 23%, 45%);
+    border-color: hsl(134, 41%, 83%);
+     
+}
+
+
 
 .open-account__btn{
-    background-color: #27ae60;
+    background-color: hsl(237, 66%, 65%);
     cursor: no-drop;
     opacity: .7;
     transition: all 0.3s;
@@ -181,5 +133,5 @@ form{
     transition: all 0.3s;
 }
 .open-account__btn.active:hover {
-    background-color: #219150;
+    background-color: hsl(237, 65%, 60%);
 }

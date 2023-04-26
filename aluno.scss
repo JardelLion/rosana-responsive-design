@@ -152,18 +152,27 @@
    }
 }
 
+.first-table .field .open-eye,
+.first-table .field .close-eye{
+    @include u.breakpoints-down(tablet){
+        top: 590px;
+    }
+}
+
+
 
 
 
 .second-table label[for="password"]{
     @include u.breakpoints-down(tablet){
-        margin-top: f.rem(120);
+        margin-top: f.rem(150);
         @include glob.prefixos(margin-top, f.rem(120));
 
 
     }
    
 }
+
 
 .first-table input::placeholder {
     @include u.breakpoints-up(tablet){
@@ -243,6 +252,8 @@
 
     }
 }
+
+
 
 
 
