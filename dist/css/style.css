@@ -1113,6 +1113,9 @@ form p {
 }
 
 .card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #6a6fe0;
   border-radius: 0.5rem;
   margin: 2rem;
@@ -1129,13 +1132,22 @@ form p {
 }
 .card__text a {
   display: block;
-  width: 100%;
+  width: 80%;
+  text-align: left;
+  margin-left: 20px;
   padding: 0.375em;
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 .card__text a:hover {
+  color: #6a6fe0;
+}
+.card__text--icon {
+  padding: 3px 6px;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 12px;
   color: #6a6fe0;
 }
 
